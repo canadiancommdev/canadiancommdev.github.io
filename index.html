@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Canadian Community Development — Planning Tools for Canadian Organizations</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:    #1B2A4A;
+  --navy2:   #0F1D35;
+  --teal:    #1D9E75;
+  --teal-lt: #E1F5EE;
+  --gold:    #C9A84C;
+  --gold-lt: #FDF3DC;
+  --white:   #FFFFFF;
+  --grey-bg: #F4F5F7;
+  --grey-lt: #E8EAED;
+  --grey-md: #888888;
+  --text:    #2A2A2A;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+/* ── HERO ─────────────────────────────────────────────────────── */
+.hero {
+  background: var(--navy2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(29,158,117,0.08) 0%, transparent 60%),
+                    radial-gradient(circle at 80% 20%, rgba(201,168,76,0.06) 0%, transparent 50%);
+}
+
+/* dot grid */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+.gold-bar-top {
+  height: 5px;
+  background: var(--gold);
+  position: relative;
+  z-index: 2;
+}
+
+nav {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 60px;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.nav-logo-icon {
+  width: 44px;
+  height: 44px;
+  background: var(--navy);
+  border: 1.5px solid var(--gold);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.nav-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.2;
+}
+
+.nav-brand span {
+  display: block;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--teal);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+}
+
+nav ul a {
+  color: rgba(255,255,255,0.7);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: color 0.2s;
+}
+
+nav ul a:hover { color: var(--gold); }
+
+.nav-cta {
+  background: var(--teal) !important;
+  color: white !important;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-size: 13px !important;
+  transition: background 0.2s !important;
+}
+
+.nav-cta:hover { background: #168a64 !important; }
+
+/* Hero content */
+.hero-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 6vw, 82px);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.05;
+  margin-bottom: 12px;
+  max-width: 900px;
+}
+
+.hero-title .gold { color: var(--gold); }
+
+.hero-rule {
+  width: 80px;
+  height: 3px;
+  background: var(--teal);
+  margin: 24px auto;
+  border-radius: 2px;
+}
+
+.hero-sub {
+  font-size: clamp(16px, 2vw, 20px);
+  color: rgba(200,215,230,0.85);
+  max-width: 640px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.hero-tagline {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(160,185,210,0.7);
+  margin-bottom: 44px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn-primary {
+  background: var(--teal);
+  color: white;
+  padding: 16px 36px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, transform 0.15s;
+  display: inline-block;
+}
+
+.btn-primary:hover { background: #168a64; transform: translateY(-1px); }
+
+.btn-secondary {
+  background: transparent;
+  color: var(--gold);
+  padding: 16px 36px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 2px solid var(--gold);
+  letter-spacing: 0.02em;
+  transition: background 0.2s, transform 0.15s;
+  display: inline-block;
+}
+
+.btn-secondary:hover { background: rgba(201,168,76,0.1); transform: translateY(-1px); }
+
+/* Hero stats */
+.hero-stats {
+  display: flex;
+  gap: 60px;
+  margin-top: 70px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: rgba(180,200,220,0.6);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ── TRUST BAR ───────────────────────────────────────────────── */
+.trust-bar {
+  background: var(--gold-lt);
+  border-top: 2px solid var(--gold);
+  border-bottom: 2px solid var(--gold);
+  padding: 20px 60px;
+  text-align: center;
+}
+
+.trust-bar p {
+  font-size: 15px;
+  color: var(--navy);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.trust-bar strong { color: var(--teal); font-style: normal; }
+
+/* ── SECTIONS ────────────────────────────────────────────────── */
+section { padding: 90px 60px; }
+
+.section-eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(30px, 4vw, 48px);
+  font-weight: 900;
+  color: var(--navy);
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.section-sub {
+  font-size: 17px;
+  color: var(--grey-md);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+/* ── ABOUT ───────────────────────────────────────────────────── */
+.about { background: var(--grey-bg); }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--navy);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 16px;
+}
+
+.about-text .highlight {
+  background: var(--teal-lt);
+  border-left: 4px solid var(--teal);
+  padding: 16px 20px;
+  border-radius: 0 8px 8px 0;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--navy);
+  margin-top: 24px;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-stat-card {
+  background: var(--white);
+  border: 1px solid var(--grey-lt);
+  border-top: 4px solid var(--teal);
+  border-radius: 10px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.about-stat-card .num {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--navy);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.about-stat-card .num span { color: var(--teal); }
+
+.about-stat-card .lbl {
+  font-size: 13px;
+  color: var(--grey-md);
+  line-height: 1.4;
+}
+
+/* ── PRODUCTS ────────────────────────────────────────────────── */
+.products { background: var(--white); }
+
+.products-intro {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Category header */
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  margin-top: 56px;
+}
+
+.cat-header:first-of-type { margin-top: 0; }
+
+.cat-line {
+  flex: 1;
+  height: 1px;
+  background: var(--grey-lt);
+}
+
+.cat-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--grey-md);
+  white-space: nowrap;
+  padding: 0 4px;
+}
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--grey-lt);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(27,42,74,0.12);
+}
+
+.card-header {
+  background: var(--navy);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header.teal { background: var(--teal); }
+.card-header.gold-bg { background: linear-gradient(135deg, var(--navy), #2A4070); }
+
+.card-icon {
+  font-size: 24px;
+}
+
+.card-badge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.9);
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.card-badge.gold-badge {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.card-badge.org-badge {
+  background: var(--gold);
+  color: var(--navy2);
+}
+
+.card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.card-features {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.card-features li {
+  font-size: 13px;
+  color: #444;
+  padding: 4px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.4;
+}
+
+.card-features li::before {
+  content: '✓';
+  color: var(--teal);
+  font-weight: 700;
+  font-size: 13px;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.card-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--grey-lt);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--grey-bg);
+}
+
+.card-price {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--navy);
+}
+
+.card-price span {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--grey-md);
+  display: block;
+  line-height: 1;
+}
+
+.card-saving {
+  font-size: 12px;
+  color: var(--teal);
+  font-weight: 700;
+  background: var(--teal-lt);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.card-btn {
+  background: var(--navy);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.card-btn:hover { background: var(--teal); }
+.card-btn.teal-btn { background: var(--teal); }
+.card-btn.teal-btn:hover { background: #168a64; }
+
+/* ── WHY ─────────────────────────────────────────────────────── */
+.why { background: var(--navy2); color: white; }
+
+.why .section-title { color: white; }
+.why .section-sub { color: rgba(180,200,220,0.7); }
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.why-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-top: 3px solid var(--teal);
+  border-radius: 10px;
+  padding: 32px 28px;
+}
+
+.why-icon {
+  font-size: 32px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.why-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.why-card p {
+  font-size: 14px;
+  color: rgba(180,200,220,0.7);
+  line-height: 1.7;
+}
+
+/* ── FORMATS ─────────────────────────────────────────────────── */
+.formats { background: var(--gold-lt); }
+
+.formats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.format-card {
+  background: white;
+  border-radius: 10px;
+  padding: 28px 24px;
+  text-align: center;
+  border: 1px solid rgba(201,168,76,0.3);
+}
+
+.format-icon { font-size: 36px; margin-bottom: 12px; display: block; }
+
+.format-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+
+.format-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* ── CTA ─────────────────────────────────────────────────────── */
+.cta {
+  background: var(--navy);
+  text-align: center;
+  padding: 80px 60px;
+}
+
+.cta h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 900;
+  color: white;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.cta h2 span { color: var(--gold); }
+
+.cta p {
+  font-size: 17px;
+  color: rgba(180,200,220,0.8);
+  max-width: 560px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
+
+/* ── FOOTER ──────────────────────────────────────────────────── */
+footer {
+  background: var(--navy2);
+  border-top: 3px solid var(--gold);
+  padding: 40px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+}
+
+.footer-brand span {
+  display: block;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 12px;
+  color: var(--teal);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-top: 3px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: rgba(180,200,220,0.6);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--gold); }
+
+.footer-copy {
+  font-size: 12px;
+  color: rgba(140,160,180,0.5);
+}
+
+/* ── RESPONSIVE ──────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  nav { padding: 20px 24px; }
+  nav ul { display: none; }
+  section { padding: 60px 24px; }
+  .hero-content { padding: 40px 24px; }
+  .about-grid { grid-template-columns: 1fr; }
+  .why-grid { grid-template-columns: 1fr; }
+  .formats-grid { grid-template-columns: 1fr; }
+  .hero-stats { gap: 30px; flex-wrap: wrap; padding: 30px 24px; }
+  footer { flex-direction: column; text-align: center; padding: 30px 24px; }
+  .footer-links { justify-content: center; }
+  .trust-bar { padding: 16px 24px; }
+}
+
+@media (max-width: 600px) {
+  .product-grid { grid-template-columns: 1fr; }
+  .about-stats { grid-template-columns: 1fr 1fr; }
+}
+
+/* ── ANIMATIONS ──────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-eyebrow  { animation: fadeUp 0.6s ease 0.1s both; }
+.hero-title    { animation: fadeUp 0.6s ease 0.25s both; }
+.hero-rule     { animation: fadeUp 0.6s ease 0.35s both; }
+.hero-sub      { animation: fadeUp 0.6s ease 0.45s both; }
+.hero-tagline  { animation: fadeUp 0.6s ease 0.52s both; }
+.hero-buttons  { animation: fadeUp 0.6s ease 0.6s both; }
+.hero-stats    { animation: fadeUp 0.6s ease 0.75s both; }
+</style>
+</head>
+<body>
+
+<!-- GOLD TOP BAR -->
+<div class="gold-bar-top"></div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">🧭</div>
+    <div class="nav-brand">
+      Canadian Community Development
+      <span>Planning Tools for Canadian Organizations</span>
+    </div>
+  </a>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="https://canadiancommdev.gumroad.com" target="_blank" class="nav-cta">Shop All</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero-content">
+  <p class="hero-eyebrow">Canadian Community Development</p>
+  <h1 class="hero-title">
+    Planning tools built for<br><span class="gold">Canadian communities</span>
+  </h1>
+  <div class="hero-rule"></div>
+  <p class="hero-sub">
+    Professional planning toolkits, guides, and workbooks for Canadian nonprofits, municipalities, Indigenous organizations, tourism offices, and regional development agencies.
+  </p>
+  <p class="hero-tagline">Created by community development professionals — these are the tools we wished we'd had.</p>
+  <div class="hero-buttons">
+    <a href="#products" class="btn-primary">Browse All Products</a>
+    <a href="https://canadiancommdev.gumroad.com" target="_blank" class="btn-secondary">Visit Our Store</a>
+  </div>
+</div>
+
+<div class="hero-stats">
+  <div class="stat">
+    <div class="stat-num">12</div>
+    <div class="stat-label">Products Available</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">304</div>
+    <div class="stat-label">Fillable Fields</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">107</div>
+    <div class="stat-label">Pages of Content</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">13</div>
+    <div class="stat-label">Provinces & Territories Covered</div>
+  </div>
+</div>
+</div><!-- end hero -->
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <p>Built by professionals with real-world experience securing <strong>multi-governmental funding</strong>, facilitating <strong>tourism programs</strong>, and navigating the <strong>Canadian funding landscape</strong> from coast to coast.</p>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-text">
+      <h2>Why these tools exist</h2>
+      <p>After years working in community economic development and tourism across Atlantic Canada — securing multi-governmental funding, facilitating community consultations, and developing 5-year community plans — we kept running into the same problem.</p>
+      <p>The right tools didn't exist. Every grant application, every stakeholder consultation, every planning process meant starting from scratch.</p>
+      <p>Canadian Community Development was built to change that. Every template, checklist, and planning framework in our series reflects hard-won, real-world experience.</p>
+      <div class="highlight">"These are the tools we wished we'd had — built for the Canadian context, with Canadian funders, Canadian programs, and Canadian communities in mind."</div>
+    </div>
+    <div class="about-stats">
+      <div class="about-stat-card">
+        <div class="num">$350<span>K+</span></div>
+        <div class="lbl">In multi-governmental funding successfully secured</div>
+      </div>
+      <div class="about-stat-card">
+        <div class="num">13</div>
+        <div class="lbl">Provinces & territories covered in our funding directories</div>
+      </div>
+      <div class="about-stat-card">
+        <div class="num">2</div>
+        <div class="lbl">Complete toolkit series — Funding & Tourism</div>
+      </div>
+      <div class="about-stat-card">
+        <div class="num">100%</div>
+        <div class="lbl">Canadian context — built for Canadian funders & organizations</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <p class="section-eyebrow">Our Products</p>
+  <h2 class="section-title">Everything your organization needs</h2>
+  <p class="section-sub">Professional planning tools available individually, as bundles, or with organizational licenses for your entire team.</p>
+
+  <div class="products-intro">
+
+    <!-- INDIVIDUAL TOOLKITS -->
+    <div class="cat-header">
+      <div class="cat-line"></div>
+      <div class="cat-label">Individual Products</div>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="card-header">
+          <span class="card-icon">📋</span>
+          <span class="card-badge">32 Pages</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Funding & Project Planning Toolkit</h3>
+          <p class="card-desc">A professional-grade toolkit covering every stage of the Canadian grant application and project planning process.</p>
+          <ul class="card-features">
+            <li>10-step Grant Application Checklist</li>
+            <li>Project Planning Template</li>
+            <li>Funding Opportunity Tracker</li>
+            <li>Meeting Agenda & Minutes</li>
+            <li>Community Consultation Outline</li>
+            <li>Canadian Funding Resources — all 13 provinces</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$57 <span>CAD</span></div>
+          <a href="https://canadiancommdev.gumroad.com/l/fundingpro" target="_blank" class="card-btn">Get it →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header">
+          <span class="card-icon">🗺️</span>
+          <span class="card-badge">36 Pages</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Community Tourism Planning Guide</h3>
+          <p class="card-desc">A step-by-step guide for community-led tourism development — from shared vision to a funded 12-month action plan.</p>
+          <ul class="card-features">
+            <li>Community Tourism Vision Worksheet</li>
+            <li>Natural, Cultural & Built Asset Mapping</li>
+            <li>Stakeholder Identification Matrix</li>
+            <li>Visitor Experience Planning</li>
+            <li>8-step Marketing Strategy Checklist</li>
+            <li>Canadian Tourism Funding directory</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$57 <span>CAD</span></div>
+          <a href="https://canadiancommdev.gumroad.com/l/tourismpro" target="_blank" class="card-btn">Get it →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ORGANIZATIONAL LICENSES -->
+    <div class="cat-header">
+      <div class="cat-line"></div>
+      <div class="cat-label">Organizational Licenses — Up to 10 Users</div>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="card-header gold-bg">
+          <span class="card-icon">🏛️</span>
+          <span class="card-badge org-badge">Org License</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Funding Toolkit — Organizational License</h3>
+          <p class="card-desc">The Funding & Project Planning Toolkit licensed for up to 10 users within a single organization. Ideal for boards, planning committees, and staff teams.</p>
+          <ul class="card-features">
+            <li>Licensed for up to 10 users</li>
+            <li>All 32 pages — fully fillable PDF</li>
+            <li>Save 50% vs. individual copies</li>
+            <li>Print copies for internal planning sessions</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$285 <span>CAD · Save 50%</span></div>
+          <a href="https://canadiancommdev.gumroad.com/l/fundingpro-org" target="_blank" class="card-btn teal-btn">Get it →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header gold-bg">
+          <span class="card-icon">🏛️</span>
+          <span class="card-badge org-badge">Org License</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Tourism Guide — Organizational License</h3>
+          <p class="card-desc">The Community Tourism Planning Guide licensed for up to 10 users within a single organization. Ideal for tourism committees, councils, and planning teams.</p>
+          <ul class="card-features">
+            <li>Licensed for up to 10 users</li>
+            <li>All 36 pages — fully fillable PDF</li>
+            <li>Save 50% vs. individual copies</li>
+            <li>Print copies for internal planning sessions</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$285 <span>CAD · Save 50%</span></div>
+          <a href="https://canadiancommdev.gumroad.com/l/tourismpro-org" target="_blank" class="card-btn teal-btn">Get it →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUNDLES -->
+    <div class="cat-header">
+      <div class="cat-line"></div>
+      <div class="cat-label">Bundles — Save 20%</div>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="card-header teal">
+          <span class="card-icon">📦</span>
+          <span class="card-badge gold-badge">Save 20%</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Complete Toolkit Bundle</h3>
+          <p class="card-desc">Both professional toolkits in one bundle — Funding & Project Planning plus Community Tourism Planning.</p>
+          <ul class="card-features">
+            <li>Funding & Project Planning Toolkit — 32 pages</li>
+            <li>Community Tourism Planning Guide — 36 pages</li>
+            <li>68 pages total · 2 fillable PDFs</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$91 <span>CAD</span></div>
+          <div class="card-saving">Save 20%</div>
+          <a href="https://canadiancommdev.gumroad.com/l/toolkitbundle" target="_blank" class="card-btn">Get it →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header teal">
+          <span class="card-icon">📦</span>
+          <span class="card-badge gold-badge">Save 20%</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Funding Complete Bundle</h3>
+          <p class="card-desc">The complete funding package — professional toolkit and companion workbook together.</p>
+          <ul class="card-features">
+            <li>Funding & Project Planning Toolkit — 32 pages</li>
+            <li>Funding & Project Planning Workbook — 18 pages</li>
+            <li>50 pages total · 2 fillable PDFs</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$67 <span>CAD</span></div>
+          <div class="card-saving">Save 20%</div>
+          <a href="https://canadiancommdev.gumroad.com/l/fundingbundle" target="_blank" class="card-btn">Get it →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header teal">
+          <span class="card-icon">📦</span>
+          <span class="card-badge gold-badge">Save 20%</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Tourism Complete Bundle</h3>
+          <p class="card-desc">The complete tourism package — professional guide and companion workbook together.</p>
+          <ul class="card-features">
+            <li>Community Tourism Planning Guide — 36 pages</li>
+            <li>Community Tourism Planning Workbook — 21 pages</li>
+            <li>57 pages total · 2 fillable PDFs</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$67 <span>CAD</span></div>
+          <div class="card-saving">Save 20%</div>
+          <a href="https://canadiancommdev.gumroad.com/l/tourismbundle" target="_blank" class="card-btn">Get it →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header" style="background: linear-gradient(135deg,#1B2A4A,#1D9E75);">
+          <span class="card-icon">⭐</span>
+          <span class="card-badge gold-badge">Best Value</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Full Series Bundle</h3>
+          <p class="card-desc">The complete Canadian Community Development series — all 4 products in one bundle.</p>
+          <ul class="card-features">
+            <li>Funding & Project Planning Toolkit — 32 pages</li>
+            <li>Community Tourism Planning Guide — 36 pages</li>
+            <li>Funding Workbook — 18 pages</li>
+            <li>Tourism Workbook — 21 pages</li>
+            <li>107 pages total · 4 fillable PDFs</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$134 <span>CAD</span></div>
+          <div class="card-saving">Save 20%</div>
+          <a href="https://canadiancommdev.gumroad.com/l/fullseries" target="_blank" class="card-btn teal-btn">Get it →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BUNDLE ORG LICENSES -->
+    <div class="cat-header">
+      <div class="cat-line"></div>
+      <div class="cat-label">Bundle Organizational Licenses — Up to 10 Users · Save 50%</div>
+      <div class="cat-line"></div>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <div class="card-header gold-bg">
+          <span class="card-icon">🏛️</span>
+          <span class="card-badge org-badge">Org License</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Complete Toolkit Bundle — Org License</h3>
+          <p class="card-desc">Both toolkits licensed for up to 10 users within a single organization.</p>
+          <ul class="card-features">
+            <li>Both toolkits · 68 pages · 2 PDFs</li>
+            <li>Up to 10 users · single organization</li>
+            <li>Save 50% vs. individual copies</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$570 <span>CAD · Save 50%</span></div>
+          <a href="https://canadiancommdev.gumroad.com/l/toolkitbundle-org" target="_blank" class="card-btn teal-btn">Get it →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header gold-bg">
+          <span class="card-icon">🏛️</span>
+          <span class="card-badge org-badge">Org License</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Funding Complete Bundle — Org License</h3>
+          <p class="card-desc">Funding toolkit and workbook licensed for up to 10 users within a single organization.</p>
+          <ul class="card-features">
+            <li>Funding toolkit + workbook · 50 pages</li>
+            <li>Up to 10 users · single organization</li>
+            <li>Save 50% vs. individual copies</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$420 <span>CAD · Save 50%</span></div>
+          <a href="https://canadiancommdev.gumroad.com/l/fundingbundle-org" target="_blank" class="card-btn teal-btn">Get it →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header gold-bg">
+          <span class="card-icon">🏛️</span>
+          <span class="card-badge org-badge">Org License</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Tourism Complete Bundle — Org License</h3>
+          <p class="card-desc">Tourism guide and workbook licensed for up to 10 users within a single organization.</p>
+          <ul class="card-features">
+            <li>Tourism guide + workbook · 57 pages</li>
+            <li>Up to 10 users · single organization</li>
+            <li>Save 50% vs. individual copies</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$420 <span>CAD · Save 50%</span></div>
+          <a href="https://canadiancommdev.gumroad.com/l/tourismbundle-org" target="_blank" class="card-btn teal-btn">Get it →</a>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="card-header" style="background: linear-gradient(135deg,#1B2A4A,#1D9E75);">
+          <span class="card-icon">⭐</span>
+          <span class="card-badge gold-badge">Best Value</span>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Full Series Bundle — Org License</h3>
+          <p class="card-desc">All 4 products licensed for up to 10 users within a single organization. The ultimate team planning package.</p>
+          <ul class="card-features">
+            <li>All 4 products · 107 pages · 4 PDFs</li>
+            <li>Up to 10 users · single organization</li>
+            <li>Save 50% vs. individual copies</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <div class="card-price">$840 <span>CAD · Save 50%</span></div>
+          <a href="https://canadiancommdev.gumroad.com/l/fullseries-org" target="_blank" class="card-btn teal-btn">Get it →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="why" id="why">
+  <p class="section-eyebrow">Why Canadian Community Development</p>
+  <h2 class="section-title">Built different. Built for Canada.</h2>
+  <p class="section-sub">What makes these tools unlike anything else available to Canadian organizations.</p>
+
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="why-icon">🇨🇦</span>
+      <h3>100% Canadian context</h3>
+      <p>Every funding program, every regulatory reference, every example is specific to Canada. ACOA, provincial tourism boards, Community Futures, federal programs — all covered for every province and territory.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">🏗️</span>
+      <h3>Built by practitioners</h3>
+      <p>Created by community development and tourism professionals with real experience securing multi-governmental funding, facilitating municipal programs, and navigating the Canadian funding landscape firsthand.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">✍️</span>
+      <h3>Fully fillable PDFs</h3>
+      <p>Every blank field is a real, clickable text field. Type directly into any PDF reader — Acrobat, Preview, or any modern viewer. Print-friendly and works in black and white.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">🔒</span>
+      <h3>Protected & stamped</h3>
+      <p>Every purchase is stamped with the buyer's email on every page. Copyright protected under Canadian law. Clear licensing terms for both individual and organizational use.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">🤝</span>
+      <h3>For real organizations</h3>
+      <p>Designed for the actual constraints of Canadian nonprofits, municipalities, and community groups — limited staff, tight budgets, volunteer boards, and real funders with real expectations.</p>
+    </div>
+    <div class="why-card">
+      <span class="why-icon">📅</span>
+      <h3>2026 Edition</h3>
+      <p>Funding programs, provincial contacts, and application guidance reflect the current Canadian funding landscape — not outdated information from years ago.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORMATS -->
+<section class="formats">
+  <p class="section-eyebrow">Product Format</p>
+  <h2 class="section-title">Designed for how you actually work</h2>
+  <p class="section-sub">Every product is delivered as a fully fillable PDF — ready to use the moment you download it.</p>
+
+  <div class="formats-grid">
+    <div class="format-card">
+      <span class="format-icon">📄</span>
+      <h3>Fillable PDF</h3>
+      <p>Click any field and start typing. Works in Adobe Acrobat, Preview, and all modern PDF readers. Your entries save with the file.</p>
+    </div>
+    <div class="format-card">
+      <span class="format-icon">🖨️</span>
+      <h3>Print-Ready</h3>
+      <p>Clean layout that prints beautifully in both colour and black and white. Comfortable margins, generous input spaces.</p>
+    </div>
+    <div class="format-card">
+      <span class="format-icon">⚡</span>
+      <h3>Instant Download</h3>
+      <p>Files are delivered immediately upon purchase via Gumroad. No waiting, no shipping. Start planning within minutes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to get started?<br><span>Your community deserves better tools.</span></h2>
+  <p>Browse all 12 products on our Gumroad store — individual toolkits, bundles, and organizational licenses for teams of up to 10.</p>
+  <div class="hero-buttons">
+    <a href="https://canadiancommdev.gumroad.com" target="_blank" class="btn-primary">Browse All Products</a>
+    <a href="#products" class="btn-secondary">See Pricing</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    Canadian Community Development
+    <span>canadiancommdev.gumroad.com</span>
+  </div>
+  <div class="footer-links">
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#why">Why Us</a>
+    <a href="https://canadiancommdev.gumroad.com" target="_blank">Store</a>
+  </div>
+  <div class="footer-copy">© 2026 Canadian Community Development. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
