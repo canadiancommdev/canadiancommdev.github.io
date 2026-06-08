@@ -767,6 +767,97 @@ footer {
 .hero-tagline  { animation: fadeUp 0.6s ease 0.52s both; }
 .hero-buttons  { animation: fadeUp 0.6s ease 0.6s both; }
 .hero-stats    { animation: fadeUp 0.6s ease 0.75s both; }
+
+/* ── FREE RESOURCE ───────────────────────────────────────────── */
+.free-resource {
+  background: linear-gradient(135deg, #0F1D35 0%, #1B2A4A 100%);
+  border-top: 4px solid var(--teal);
+  border-bottom: 4px solid var(--teal);
+  padding: 60px 60px;
+  text-align: center;
+}
+
+.free-badge {
+  display: inline-block;
+  background: var(--teal);
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.free-resource h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(26px, 3.5vw, 42px);
+  font-weight: 900;
+  color: white;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.free-resource h2 span { color: var(--gold); }
+
+.free-resource p {
+  font-size: 16px;
+  color: rgba(180,200,220,0.85);
+  max-width: 580px;
+  margin: 0 auto 16px;
+  line-height: 1.6;
+}
+
+.free-checklist-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 24px;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+
+.free-checklist-items span {
+  font-size: 13px;
+  color: rgba(180,210,230,0.9);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.free-checklist-items span::before {
+  content: '✓';
+  color: var(--teal);
+  font-weight: 700;
+}
+
+.btn-free {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  padding: 16px 40px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: background 0.2s, transform 0.15s;
+  margin-bottom: 14px;
+}
+
+.btn-free:hover { background: #b8963e; transform: translateY(-1px); }
+
+.free-no-email {
+  font-size: 12px;
+  color: rgba(140,160,180,0.6);
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .free-resource { padding: 50px 24px; }
+}
+
 </style>
 </head>
 <body>
@@ -785,6 +876,7 @@ footer {
   </a>
   <ul>
     <li><a href="#about">About</a></li>
+    <li><a href="#free">Free Resource</a></li>
     <li><a href="#products">Products</a></li>
     <li><a href="#why">Why Us</a></li>
     <li><a href="#products" class="nav-cta">Shop All</a></li>
@@ -864,6 +956,25 @@ footer {
       </div>
     </div>
   </div>
+</section>
+
+<!-- FREE RESOURCE -->
+<section class="free-resource" id="free">
+  <p class="free-badge">Free Resource</p>
+  <h2>Not sure where to start?<br><span>Download our free Grant Readiness Checklist.</span></h2>
+  <p>20 essential checks before you submit any Canadian grant application — built by community development professionals with real-world experience.</p>
+  <div class="free-checklist-items">
+    <span>Eligibility &amp; research</span>
+    <span>Needs assessment</span>
+    <span>Line-item budget</span>
+    <span>In-kind contributions</span>
+    <span>Feasibility study</span>
+    <span>Letters of support</span>
+    <span>Final review</span>
+    <span>24-hour submission buffer</span>
+  </div>
+  <a href="https://canadiancommdev.gumroad.com/l/grantchecklist" target="_blank" class="btn-free">Download Free Checklist</a>
+  <span class="free-no-email">Free download — no payment required</span>
 </section>
 
 <!-- PRODUCTS -->
