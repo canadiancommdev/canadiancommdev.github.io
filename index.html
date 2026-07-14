@@ -3,7 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Canadian Community Development — Planning Tools for Canadian Organizations</title>
+<title>Community Development Planning Tools & Templates | Canada</title>
+<meta name="description" content="Field-tested community development planning tools, grant templates, tourism guides and funding resources created for Canadian nonprofits, municipalities, Indigenous organizations and development professionals.">
+<link rel="canonical" href="https://canadiancommunitydevelopment.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Canadian Community Development Planning Tools">
+<meta property="og:description" content="Practical, field-tested planning systems that help Canadian organizations build stronger projects, prepare for funding and move from ideas to implementation.">
+<meta property="og:url" content="https://canadiancommunitydevelopment.com/">
+<meta property="og:site_name" content="Canadian Community Development">
+<meta name="twitter:card" content="summary_large_image">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -734,6 +743,63 @@ footer {
   color: #8899AA;
 }
 
+
+/* ── SOLUTIONS / KNOWLEDGE / FAQ ─────────────────────────────── */
+.solutions { background: var(--white); }
+.solution-grid, .knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.solution-card, .knowledge-card {
+  border: 1px solid var(--grey-lt);
+  border-radius: 12px;
+  padding: 28px;
+  background: var(--white);
+  box-shadow: 0 8px 24px rgba(27,42,74,0.06);
+}
+.solution-card h3, .knowledge-card h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+  font-size: 21px;
+  margin: 10px 0 10px;
+}
+.solution-card p, .knowledge-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+.solution-card a, .knowledge-card a {
+  color: var(--teal);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 14px;
+}
+.solution-kicker { font-size: 11px; color: var(--teal); font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.knowledge { background: var(--grey-bg); }
+.knowledge-card { box-shadow: none; }
+.faq { background: var(--white); }
+.faq-wrap { max-width: 900px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid var(--grey-lt); padding: 24px 0; }
+.faq-item h3 { color: var(--navy); font-size: 18px; margin-bottom: 8px; }
+.faq-item p { color: #555; line-height: 1.7; font-size: 15px; }
+.authority-box {
+  max-width: 1100px;
+  margin: 50px auto 0;
+  background: var(--teal-lt);
+  border-left: 5px solid var(--teal);
+  border-radius: 0 12px 12px 0;
+  padding: 28px 32px;
+}
+.authority-box h3 { color: var(--navy); font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 10px; }
+.authority-box p { color: #3f4a54; line-height: 1.7; }
+@media (max-width: 900px) {
+  .solution-grid, .knowledge-grid { grid-template-columns: 1fr; }
+}
+
 /* ── RESPONSIVE ──────────────────────────────────────────────── */
 @media (max-width: 900px) {
   nav { padding: 20px 24px; }
@@ -869,6 +935,56 @@ footer {
     ml('account', '2472719');
 </script>
 <!-- End MailerLite Universal -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://canadiancommunitydevelopment.com/#organization",
+      "name": "Canadian Community Development",
+      "url": "https://canadiancommunitydevelopment.com/",
+      "description": "Canadian planning tools, templates and guides for community development, grant readiness, tourism development and small business funding.",
+      "areaServed": "CA"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://canadiancommunitydevelopment.com/#website",
+      "url": "https://canadiancommunitydevelopment.com/",
+      "name": "Canadian Community Development",
+      "publisher": {"@id": "https://canadiancommunitydevelopment.com/#organization"},
+      "inLanguage": "en-CA"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who are the planning tools designed for?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The resources are designed for Canadian nonprofits, municipalities, Indigenous organizations, tourism groups, regional development agencies, Community Futures offices, business associations and community leaders."}
+        },
+        {
+          "@type": "Question",
+          "name": "Are the templates specific to Canada?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. The funding references, planning context, examples and directories are developed for Canadian organizations and cover federal, provincial, territorial and selected Indigenous funding streams."}
+        },
+        {
+          "@type": "Question",
+          "name": "What format are the products delivered in?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Products are delivered as downloadable, fillable PDF files that can be completed electronically or printed for planning sessions."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can a team use the same toolkit?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Individual purchases are licensed to one user. Organizational licences are available for teams of up to 10 users within one organization."}
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 </head>
 <body>
 
@@ -887,27 +1003,29 @@ footer {
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#free">Free Resource</a></li>
+    <li><a href="#solutions">Solutions</a></li>
     <li><a href="#products">Products</a></li>
+    <li><a href="#resources">Resources</a></li>
     <li><a href="#why">Why Us</a></li>
-    <li><a href="#products" class="nav-cta">Shop All</a></li>
+    <li><a href="#products" class="nav-cta">Browse Tools</a></li>
   </ul>
 </nav>
 
 <!-- HERO -->
 <div class="hero">
 <div class="hero-content">
-  <p class="hero-eyebrow">Canadian Community Development</p>
+  <p class="hero-eyebrow">Practical planning systems for Canadian organizations</p>
   <h1 class="hero-title">
-    Planning tools built for<br><span class="gold">Canadian communities</span>
+    Build stronger projects.<br><span class="gold">Prepare for funding.</span>
   </h1>
   <div class="hero-rule"></div>
   <p class="hero-sub">
-    Professional planning toolkits, guides, and workbooks for Canadian nonprofits, municipalities, Indigenous organizations, tourism offices, and regional development agencies.
+    Field-tested community development planning tools, grant templates, tourism guides and funding resources that help Canadian organizations move from ideas to implementation without rebuilding every document from scratch.
   </p>
-  <p class="hero-tagline">Created by community development professionals — these are the tools we wished we'd had.</p>
+  <p class="hero-tagline">Created from real community economic development and tourism experience — these are the tools we wished we'd had.</p>
   <div class="hero-buttons">
-    <a href="#products" class="btn-primary">Browse All Products</a>
-    <a href="#about" class="btn-secondary">Our Story</a>
+    <a href="#solutions" class="btn-primary">Find the Right Planning Tool</a>
+    <a href="#free" class="btn-secondary">Start With a Free Resource</a>
   </div>
 </div>
 
@@ -933,15 +1051,61 @@ footer {
 
 <!-- TRUST BAR -->
 <div class="trust-bar">
-  <p>Prices listed in CAD. Billing processed in USD at the exchange rate at time of purchase. &nbsp;|&nbsp; Developed from first-hand experience in community economic development, and built to meet the standards <strong>Canadian funders actually look for</strong>. These are the tools we wished we'd had.</p>
+  <p><strong>Built for Canadian organizations:</strong> practical planning frameworks, fillable templates and current funding resources developed from first-hand community economic development experience. &nbsp;|&nbsp; Prices shown in CAD; checkout is processed in USD at the current exchange rate.</p>
 </div>
+
+
+<!-- SOLUTIONS -->
+<section class="solutions" id="solutions">
+  <p class="section-eyebrow">Start with the outcome you need</p>
+  <h2 class="section-title">What are you trying to move forward?</h2>
+  <p class="section-sub">Choose the planning challenge you are facing. Each resource gives you a guided process, practical templates and Canadian-specific context.</p>
+  <div class="solution-grid">
+    <article class="solution-card">
+      <div class="solution-kicker">Funding readiness</div>
+      <h3>Plan a fundable community project</h3>
+      <p>Clarify the need, define outcomes, build a realistic budget, organize supporting evidence and prepare the information Canadian funders expect.</p>
+      <a href="#products">Explore funding and project-planning tools →</a>
+    </article>
+    <article class="solution-card">
+      <div class="solution-kicker">Community planning</div>
+      <h3>Turn community priorities into action</h3>
+      <p>Assess readiness, map local assets, engage stakeholders, prioritize opportunities and create an implementation plan that can be tracked over time.</p>
+      <a href="#products">Explore community development tools →</a>
+    </article>
+    <article class="solution-card">
+      <div class="solution-kicker">Tourism development</div>
+      <h3>Build a community-led tourism strategy</h3>
+      <p>Identify tourism assets, shape visitor experiences, align partners and convert a shared vision into a practical 12-month action plan.</p>
+      <a href="#products">Explore tourism planning tools →</a>
+    </article>
+    <article class="solution-card">
+      <div class="solution-kicker">Small business</div>
+      <h3>Prepare a business plan for funding</h3>
+      <p>Develop a professional five-year plan, financial projections, risk analysis and funding strategy using a framework aligned with Canadian programs.</p>
+      <a href="#products">Explore small-business planning tools →</a>
+    </article>
+    <article class="solution-card">
+      <div class="solution-kicker">Tourism startup</div>
+      <h3>Launch a tourism business in Canada</h3>
+      <p>Work through business models, permits, property and guest-experience decisions, seasonal forecasts, insurance and launch priorities.</p>
+      <a href="#products">Explore the tourism startup guide →</a>
+    </article>
+    <article class="solution-card">
+      <div class="solution-kicker">Teams and advisors</div>
+      <h3>Equip staff, boards or clients</h3>
+      <p>Organizational licences let up to 10 users work from the same structured process during planning sessions, advisory meetings and project development.</p>
+      <a href="#products">Compare organizational licences →</a>
+    </article>
+  </div>
+</section>
 
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-grid">
     <div class="about-text">
-      <h2>Why these tools exist</h2>
-      <p>After years working in community economic development and tourism across Atlantic Canada — securing multi-governmental funding, facilitating community consultations, and developing long-term community plans — we kept running into the same challenge.</p>
+      <h2>Built from the work Canadian organizations actually have to do</h2>
+      <p>These planning systems were developed after years of work in community economic development and tourism across Atlantic Canada — including securing multi-governmental funding, facilitating community consultations and developing long-term community plans.</p>
       <p>The right tools didn't exist. Every grant application, stakeholder consultation, strategic planning process, or funding proposal meant rebuilding documents, templates, and frameworks from scratch.</p>
       <p>Canadian Community Development was created to change that. Our resources are built from real-world experience and designed specifically for Canadian municipalities, community organizations, tourism operators, and economic development officers. Every template, checklist, and planning framework is designed to help organizations save time, strengthen projects, and move from ideas to implementation more efficiently.</p>
       <p>Whether you're preparing a funding application, launching a community initiative, developing a tourism strategy, or planning for long-term growth, our goal is to provide practical tools that help you spend less time creating documents and more time advancing projects.</p>
@@ -965,6 +1129,10 @@ footer {
         <div class="lbl">Canadian context — built for Canadian funders & organizations</div>
       </div>
     </div>
+  </div>
+  <div class="authority-box">
+    <h3>Not generic templates. A guided planning process.</h3>
+    <p>Each resource combines practical guidance, structured questions, fillable worksheets, checklists and Canadian funding context. The goal is not simply to give you a document; it is to help your organization think through the decisions, evidence and next steps needed to move a project forward.</p>
   </div>
 </section>
 
@@ -1341,6 +1509,46 @@ footer {
   </div>
 </section>
 
+
+<!-- KNOWLEDGE CENTRE -->
+<section class="knowledge" id="resources">
+  <p class="section-eyebrow">Community Development Knowledge Centre</p>
+  <h2 class="section-title">Practical guidance before you buy</h2>
+  <p class="section-sub">Use these starting points to understand the planning process, assess readiness and choose the resource that fits your work.</p>
+  <div class="knowledge-grid">
+    <article class="knowledge-card">
+      <h3>How to plan a community development project</h3>
+      <p>Start with the community need, document evidence, identify affected groups, define measurable outcomes and assign realistic responsibilities before pursuing funding.</p>
+      <a href="#free">Use the free Grant Readiness Checklist →</a>
+    </article>
+    <article class="knowledge-card">
+      <h3>What funders look for in a project plan</h3>
+      <p>Strong applications connect a clearly demonstrated need to achievable activities, credible partners, a defensible budget and measurable results.</p>
+      <a href="#products">See the Funding & Project Planning Toolkit →</a>
+    </article>
+    <article class="knowledge-card">
+      <h3>How community asset mapping supports strategy</h3>
+      <p>Asset mapping helps communities recognize existing strengths, uncover overlooked opportunities and build plans around resources that already exist locally.</p>
+      <a href="#free">Download the free tourism sample →</a>
+    </article>
+    <article class="knowledge-card">
+      <h3>How to assess community readiness</h3>
+      <p>Before launching a major initiative, assess leadership, participation, partnerships, capacity, evidence, resources, timing and the community's willingness to act.</p>
+      <a href="#free">Download the free CED sample →</a>
+    </article>
+    <article class="knowledge-card">
+      <h3>Individual versus organizational licences</h3>
+      <p>Choose an individual licence for one user. Choose an organizational licence when staff, board members, committee members or advisors need shared access.</p>
+      <a href="#products">Compare licence options →</a>
+    </article>
+    <article class="knowledge-card">
+      <h3>Planning for Canadian context</h3>
+      <p>Canadian organizations must often coordinate federal, provincial or territorial programs, regional agencies, local partners and community-specific consultation requirements.</p>
+      <a href="#why">See why the Canadian focus matters →</a>
+    </article>
+  </div>
+</section>
+
 <!-- WHY -->
 <section class="why" id="why">
   <p class="section-eyebrow">Why Canadian Community Development</p>
@@ -1406,13 +1614,42 @@ footer {
   </div>
 </section>
 
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <p class="section-eyebrow">Frequently Asked Questions</p>
+  <h2 class="section-title">Before you choose a resource</h2>
+  <div class="faq-wrap">
+    <div class="faq-item">
+      <h3>Who are these planning tools designed for?</h3>
+      <p>They are designed for Canadian nonprofits, municipalities, Indigenous organizations, tourism groups, regional development agencies, Community Futures offices, business associations, consultants and community leaders.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Are the templates specific to Canada?</h3>
+      <p>Yes. The funding references, examples, planning context and directories are developed for Canadian organizations and include federal, provincial, territorial and selected Indigenous funding streams.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What format will I receive?</h3>
+      <p>Products are delivered as downloadable, fillable PDF files. You can type into them electronically, save your work and print copies for meetings or planning sessions.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can my board, staff team or clients use the same copy?</h3>
+      <p>Individual purchases are licensed to one user. Organizational licences are available for up to 10 users within one organization.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Can I see a sample before purchasing?</h3>
+      <p>Yes. Free sample sections are available for the Funding & Project Planning Toolkit, Community Tourism Planning Guide and Community Economic Development Planning Toolkit.</p>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta">
-  <h2>Ready to get started?<br><span>Your community deserves better tools.</span></h2>
-  <p>Browse all 11 products on our Gumroad store — individual toolkits, bundles, and organizational licenses for teams of up to 10.</p>
+  <h2>Spend less time rebuilding documents.<br><span>Spend more time moving projects forward.</span></h2>
+  <p>Choose a field-tested planning system, begin with a free sample, or equip your full team with an organizational licence.</p>
   <div class="hero-buttons">
-    <a href="#products" class="btn-primary">Browse All Products</a>
-    <a href="#products" class="btn-secondary">See Pricing</a>
+    <a href="#products" class="btn-primary">Browse Planning Tools</a>
+    <a href="#free" class="btn-secondary">Download a Free Resource</a>
   </div>
 </section>
 
@@ -1420,11 +1657,14 @@ footer {
 <footer>
   <div class="footer-brand">
     Canadian Community Development
-    <span>canadiancommdev.gumroad.com</span>
+    <span>canadiancommunitydevelopment.com</span>
   </div>
   <div class="footer-links">
     <a href="#about">About</a>
+    <a href="#solutions">Solutions</a>
     <a href="#products">Products</a>
+    <a href="#resources">Resources</a>
+    <a href="#faq">FAQ</a>
     <a href="#why">Why Us</a>
     <a href="https://canadiancommdev.gumroad.com" target="_blank">Store</a>
   </div>
