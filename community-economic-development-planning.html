@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Economic Development Planning System | Canada</title>
+  <meta name="description" content="A field-tested community economic development planning system for Canadian municipalities, Indigenous organizations, nonprofits and development teams.">
+  <link rel="canonical" href="https://canadiancommunitydevelopment.com/community-economic-development-planning.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="Community Economic Development Planning System">
+  <meta property="og:description" content="Guide your Canadian community from readiness and asset mapping through funding, implementation and evaluation.">
+  <meta property="og:url" content="https://canadiancommunitydevelopment.com/community-economic-development-planning.html">
+  <meta property="og:site_name" content="Canadian Community Development">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy:#1B2A4A;
+      --navy2:#0F1D35;
+      --teal:#1D9E75;
+      --teal-dark:#168a64;
+      --teal-lt:#E1F5EE;
+      --gold:#C9A84C;
+      --gold-lt:#FDF3DC;
+      --white:#FFFFFF;
+      --grey-bg:#F4F5F7;
+      --grey-lt:#E8EAED;
+      --grey-md:#68717d;
+      --text:#2A2A2A;
+      --shadow:0 18px 45px rgba(15,29,53,.12);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Source Sans 3',sans-serif;color:var(--text);background:var(--white);line-height:1.65}
+    a{color:inherit}
+    .top-line{height:5px;background:var(--gold)}
+    .site-header{background:var(--navy2);position:relative;z-index:5}
+    nav{max-width:1240px;margin:auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:white}
+    .brand-icon{width:44px;height:44px;border:1.5px solid var(--gold);border-radius:8px;display:grid;place-items:center;font-size:22px;background:var(--navy)}
+    .brand-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;line-height:1.15}
+    .brand-name span{display:block;margin-top:4px;font-family:'Source Sans 3',sans-serif;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#34c89a;font-weight:600}
+    nav ul{display:flex;align-items:center;gap:28px;list-style:none}
+    nav ul a{text-decoration:none;color:#d9e9f7;font-size:14px;font-weight:600}
+    nav ul a:hover{color:var(--gold)}
+    .nav-cta{padding:10px 18px;border-radius:6px;background:var(--teal);color:white!important}
+
+    .hero{background:var(--navy2);color:white;position:relative;overflow:hidden;padding:86px 32px 92px}
+    .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 15% 40%,rgba(29,158,117,.14),transparent 45%),radial-gradient(circle at 85% 20%,rgba(201,168,76,.1),transparent 40%),radial-gradient(circle,rgba(255,255,255,.055) 1px,transparent 1px);background-size:auto,auto,28px 28px}
+    .hero-inner{max-width:1180px;margin:auto;position:relative;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(300px,.75fr);gap:56px;align-items:center}
+    .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:#35c596;font-weight:700;margin-bottom:18px}
+    h1,h2,h3{font-family:'Playfair Display',serif;color:var(--navy);line-height:1.15}
+    h1{font-size:clamp(42px,5.7vw,72px);color:white;font-weight:900;max-width:850px}
+    h1 span{color:var(--gold)}
+    .hero-copy{font-size:19px;color:#d5e7f6;max-width:760px;margin:24px 0 16px}
+    .hero-note{color:#aec7dd;font-size:15px;max-width:720px}
+    .button-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+    .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:15px 25px;text-align:center;transition:.2s ease}
+    .btn-primary{background:var(--teal);color:white}
+    .btn-primary:hover{background:var(--teal-dark);transform:translateY(-1px)}
+    .btn-secondary{border:2px solid var(--gold);color:var(--gold)}
+    .btn-secondary:hover{background:rgba(201,168,76,.1)}
+    .btn-light{background:white;color:var(--navy)}
+    .btn-light:hover{transform:translateY(-1px);box-shadow:0 9px 20px rgba(0,0,0,.15)}
+    .hero-card{background:white;color:var(--text);border-top:5px solid var(--gold);border-radius:12px;padding:30px;box-shadow:0 22px 55px rgba(0,0,0,.22)}
+    .hero-card .flag{display:inline-block;background:var(--gold-lt);color:var(--navy);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;padding:5px 10px;border-radius:20px;margin-bottom:13px}
+    .hero-card h2{font-size:25px;margin-bottom:17px}
+    .quick-list{list-style:none;margin:18px 0}
+    .quick-list li{position:relative;padding:5px 0 5px 25px;font-size:14px}
+    .quick-list li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:800}
+    .price-box{border-top:1px solid var(--grey-lt);padding-top:20px;margin-top:18px;display:flex;justify-content:space-between;gap:16px}
+    .price-box strong{font-family:'Playfair Display',serif;color:var(--navy);font-size:27px}
+    .price-box span{display:block;color:var(--grey-md);font-size:12px}
+
+    .notice{background:var(--gold-lt);border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);padding:17px 28px;text-align:center;color:var(--navy);font-size:14px;font-weight:600}
+    .notice strong{color:var(--teal-dark)}
+    main section{padding:84px 32px}
+    .container{max-width:1120px;margin:auto}
+    .section-eyebrow{text-align:center;text-transform:uppercase;letter-spacing:.19em;font-size:11px;font-weight:700;color:var(--teal);margin-bottom:10px}
+    .section-title{text-align:center;font-size:clamp(31px,4vw,47px);font-weight:900;margin-bottom:16px}
+    .section-sub{text-align:center;max-width:720px;margin:0 auto 50px;color:var(--grey-md);font-size:17px}
+    .intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:58px;align-items:start}
+    .prose h2{font-size:37px;margin-bottom:20px}
+    .prose p{margin-bottom:17px;font-size:17px;color:#404751}
+    .definition{background:var(--teal-lt);border-left:4px solid var(--teal);border-radius:0 10px 10px 0;padding:22px 25px;margin-top:26px;color:var(--navy)}
+    .side-panel{background:var(--grey-bg);border:1px solid var(--grey-lt);border-radius:12px;padding:28px}
+    .side-panel h3{font-size:24px;margin-bottom:13px}
+    .side-panel ul{list-style:none}
+    .side-panel li{padding:8px 0 8px 25px;position:relative;border-bottom:1px solid #e2e5e9}
+    .side-panel li:last-child{border-bottom:0}
+    .side-panel li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:800}
+
+    .phases{background:var(--navy2)}
+    .phases .section-title{color:white}
+    .phases .section-sub{color:#afc6da}
+    .phase-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .phase-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-top:3px solid var(--teal);border-radius:10px;padding:25px 20px;color:white}
+    .phase-number{font-family:'Playfair Display',serif;color:var(--gold);font-weight:900;font-size:28px;margin-bottom:9px}
+    .phase-card h3{color:white;font-size:19px;margin-bottom:9px}
+    .phase-card p{color:#aac2d6;font-size:14px}
+
+    .included{background:var(--grey-bg)}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .feature{background:white;border:1px solid var(--grey-lt);border-radius:11px;padding:27px;box-shadow:0 8px 23px rgba(27,42,74,.045)}
+    .feature-icon{font-size:27px;margin-bottom:11px}
+    .feature h3{font-size:20px;margin-bottom:8px}
+    .feature p{font-size:14px;color:#59616a}
+    .spec-strip{margin-top:32px;background:var(--navy);color:white;border-radius:12px;padding:25px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+    .spec-strip strong{display:block;font-family:'Playfair Display',serif;font-size:29px;color:var(--gold)}
+    .spec-strip span{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#d2e2ef}
+
+    .audience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .audience-card{border:1px solid var(--grey-lt);border-radius:10px;padding:24px;text-align:center}
+    .audience-card span{font-size:31px;display:block;margin-bottom:10px}
+    .audience-card h3{font-size:18px}
+
+    .pricing{background:var(--gold-lt)}
+    .pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;max-width:880px;margin:auto}
+    .price-card{background:white;border:1px solid rgba(201,168,76,.45);border-radius:13px;padding:34px;position:relative}
+    .price-card.featured{border:2px solid var(--teal);box-shadow:var(--shadow)}
+    .badge{position:absolute;right:20px;top:20px;background:var(--teal);color:white;border-radius:20px;padding:5px 11px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+    .price-card h3{font-size:25px;margin-bottom:7px}
+    .price{font-family:'Playfair Display',serif;color:var(--navy);font-size:45px;font-weight:900;margin:14px 0 2px}
+    .currency{font-size:13px;color:var(--grey-md);margin-bottom:20px}
+    .price-card ul{list-style:none;margin:18px 0 27px}
+    .price-card li{position:relative;padding:6px 0 6px 24px;font-size:14px}
+    .price-card li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:800}
+    .price-card .btn{width:100%}
+    .payment-note{text-align:center;margin-top:24px;color:#626a73;font-size:13px}
+
+    .sample{background:var(--navy);color:white}
+    .sample-inner{display:grid;grid-template-columns:1fr auto;gap:34px;align-items:center}
+    .sample h2{color:white;font-size:39px;margin-bottom:12px}
+    .sample p{color:#bed1e1;max-width:760px}
+
+    .experience-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center}
+    .experience-stat{background:var(--navy2);color:white;border-radius:13px;padding:42px;text-align:center;border-top:5px solid var(--gold)}
+    .experience-stat strong{font-family:'Playfair Display',serif;color:var(--gold);font-size:52px;display:block;line-height:1}
+    .experience-stat span{font-size:14px;color:#c5d8e8;display:block;margin-top:10px}
+    .experience-copy h2{font-size:37px;margin-bottom:18px}
+    .experience-copy p{margin-bottom:15px;color:#48505a}
+
+    .faq{background:var(--grey-bg)}
+    .faq-list{max-width:900px;margin:auto;display:grid;gap:14px}
+    details{background:white;border:1px solid var(--grey-lt);border-radius:9px;padding:18px 22px}
+    summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:16px}
+    details p{padding-top:12px;color:#555e68}
+
+    .final-cta{background:var(--navy2);text-align:center;color:white;padding:80px 32px}
+    .final-cta h2{font-size:clamp(31px,4vw,47px);color:white;margin-bottom:15px}
+    .final-cta h2 span{color:var(--gold)}
+    .final-cta p{max-width:680px;margin:0 auto;color:#b7cce0;font-size:17px}
+    .final-cta .button-row{justify-content:center}
+
+    footer{background:#091426;border-top:3px solid var(--gold);padding:36px 32px;color:#9fb3c7}
+    .footer-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
+    .footer-brand{font-family:'Playfair Display',serif;color:white;font-weight:700}
+    .footer-links{display:flex;gap:20px;flex-wrap:wrap}
+    .footer-links a{text-decoration:none;font-size:13px}
+    .footer-links a:hover{color:var(--gold)}
+
+    @media(max-width:960px){
+      nav ul{display:none}
+      .hero-inner,.intro-grid,.experience-grid{grid-template-columns:1fr}
+      .hero{padding-top:60px}
+      .hero-card{max-width:610px}
+      .phase-grid{grid-template-columns:repeat(2,1fr)}
+      .feature-grid{grid-template-columns:repeat(2,1fr)}
+      .audience-grid{grid-template-columns:repeat(2,1fr)}
+      .sample-inner{grid-template-columns:1fr}
+    }
+    @media(max-width:650px){
+      nav{padding:17px 20px}
+      .brand-name{font-size:15px}
+      main section{padding:62px 20px}
+      .hero{padding:58px 20px 65px}
+      .button-row{flex-direction:column}
+      .btn{width:100%}
+      .price-box{flex-direction:column}
+      .phase-grid,.feature-grid,.audience-grid,.pricing-grid,.spec-strip{grid-template-columns:1fr}
+      .spec-strip{gap:12px}
+      .sample h2{font-size:31px}
+      .footer-inner{flex-direction:column;text-align:center}
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://canadiancommunitydevelopment.com/"},
+      {"@type":"ListItem","position":2,"name":"Community Economic Development Planning System","item":"https://canadiancommunitydevelopment.com/community-economic-development-planning.html"}
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Community Economic Development Planning System",
+    "description":"A field-tested planning system that helps Canadian communities and organizations assess readiness, map assets, set priorities, prepare for funding, implement initiatives and evaluate progress.",
+    "brand":{"@type":"Brand","name":"Canadian Community Development"},
+    "category":"Community economic development planning system",
+    "url":"https://canadiancommunitydevelopment.com/community-economic-development-planning.html",
+    "offers":[
+      {
+        "@type":"Offer",
+        "name":"Individual Licence",
+        "price":"67.00",
+        "priceCurrency":"CAD",
+        "availability":"https://schema.org/InStock",
+        "itemCondition":"https://schema.org/NewCondition",
+        "url":"https://canadiancommdev.gumroad.com/l/cedtoolkit"
+      },
+      {
+        "@type":"Offer",
+        "name":"Professional Team Licence — Up to 10 Users",
+        "price":"395.00",
+        "priceCurrency":"CAD",
+        "availability":"https://schema.org/InStock",
+        "itemCondition":"https://schema.org/NewCondition",
+        "url":"https://canadiancommdev.gumroad.com/l/ced-planning-system-org"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Who is the Community Economic Development Planning System for?",
+        "acceptedAnswer":{"@type":"Answer","text":"It is designed for Canadian municipalities, Indigenous organizations, nonprofits, regional development agencies, Community Futures organizations, economic development offices, planning committees and community development professionals."}
+      },
+      {
+        "@type":"Question",
+        "name":"What format is the planning system delivered in?",
+        "acceptedAnswer":{"@type":"Answer","text":"It is delivered as a 48-page fillable PDF with 274 interactive fields. It can be completed digitally or printed for planning sessions."}
+      },
+      {
+        "@type":"Question",
+        "name":"What is the difference between the individual and team licences?",
+        "acceptedAnswer":{"@type":"Answer","text":"The individual licence is for one user. The Professional Team Licence permits up to 10 users within one organization to use the planning system for internal planning work."}
+      },
+      {
+        "@type":"Question",
+        "name":"Does the system include Canadian funding resources?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. It includes a Canadian community economic development funding directory covering federal, provincial and Indigenous funding streams. Program details should always be confirmed with the funder before applying."}
+      },
+      {
+        "@type":"Question",
+        "name":"Can I see a sample before purchasing?",
+        "acceptedAnswer":{"@type":"Answer","text":"Yes. A free sample section is available and includes the Community Readiness Assessment, a worked example, facilitator guidance and fillable fields."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="top-line"></div>
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a class="brand" href="/">
+        <span class="brand-icon" aria-hidden="true">🧭</span>
+        <span class="brand-name">Canadian Community Development<span>Planning Systems for Canada</span></span>
+      </a>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#included">What's Included</a></li>
+        <li><a href="#licences">Licences</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="nav-cta" href="https://canadiancommdev.gumroad.com/l/cedtoolkit" target="_blank" rel="noopener">Buy Individual</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow">Flagship professional planning system</p>
+        <h1>Community Economic Development <span>Planning System</span></h1>
+        <p class="hero-copy">A complete, phase-based planning process that helps Canadian communities assess readiness, map local assets, set priorities, prepare for funding and move initiatives into implementation.</p>
+        <p class="hero-note">Designed for municipalities, Indigenous organizations, nonprofits, regional development agencies, Community Futures organizations and economic development teams.</p>
+        <div class="button-row">
+          <a class="btn btn-primary" href="#licences">Choose Your Licence</a>
+          <a class="btn btn-secondary" href="https://canadiancommdev.gumroad.com/l/cedtoolkit-sample" target="_blank" rel="noopener">View the Free Sample</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Product summary">
+        <span class="flag">2026 Edition · Field Tested</span>
+        <h2>From community priorities to funded action</h2>
+        <ul class="quick-list">
+          <li>Five-phase guided planning process</li>
+          <li>Community readiness and asset mapping</li>
+          <li>Priority-setting and funding readiness</li>
+          <li>Implementation and progress tracking</li>
+          <li>Canadian funding directory</li>
+        </ul>
+        <div class="price-box">
+          <div><strong>$67</strong><span>CAD · Individual Licence</span></div>
+          <div><strong>$395</strong><span>CAD · Up to 10 Users</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="notice"><strong>Prices are listed in CAD.</strong> Billing is processed in USD at the exchange rate at the time of purchase. Your download will be available immediately after purchase and in your email.</div>
+
+  <main>
+    <section id="overview">
+      <div class="container intro-grid">
+        <div class="prose">
+          <p class="eyebrow" style="text-align:left">A practical Canadian planning framework</p>
+          <h2>What is community economic development planning?</h2>
+          <p>Community economic development planning is a locally driven process for understanding a community's strengths, challenges and opportunities, then turning that knowledge into realistic priorities, fundable projects and measurable action.</p>
+          <p>This system gives your organization a structured place to collect information, involve stakeholders, assess opportunities, make decisions and document the reasoning behind those decisions. It replaces disconnected notes and blank-page planning with one guided process.</p>
+          <p>It is built for the realities of Canadian community work: limited staff capacity, volunteer boards, multiple partners, changing funding programs and the need to show clear outcomes.</p>
+          <div class="definition"><strong>The result:</strong> a documented community economic development process that can support strategic decisions, funding applications, implementation meetings and progress reporting.</div>
+        </div>
+        <aside class="side-panel">
+          <h3>A strong CED plan should help you:</h3>
+          <ul>
+            <li>Understand whether the community is ready to move forward</li>
+            <li>Identify local assets, gaps and emerging opportunities</li>
+            <li>Bring community and organizational perspectives together</li>
+            <li>Choose projects using clear, consistent criteria</li>
+            <li>Connect priorities to realistic funding opportunities</li>
+            <li>Assign responsibility, timelines and measures of progress</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="phases" aria-labelledby="phases-title">
+      <div class="container">
+        <p class="section-eyebrow">The guided process</p>
+        <h2 class="section-title" id="phases-title">Five phases from readiness to results</h2>
+        <p class="section-sub">Each phase builds the information and decisions needed for the next, creating a clear path from early discussion to accountable implementation.</p>
+        <div class="phase-grid">
+          <article class="phase-card"><div class="phase-number">01</div><h3>Discover</h3><p>Assess readiness, clarify the purpose and identify who needs to participate.</p></article>
+          <article class="phase-card"><div class="phase-number">02</div><h3>Assess</h3><p>Map community assets, examine strengths and weaknesses, and identify opportunities.</p></article>
+          <article class="phase-card"><div class="phase-number">03</div><h3>Plan</h3><p>Set priorities, compare project ideas and define practical goals and actions.</p></article>
+          <article class="phase-card"><div class="phase-number">04</div><h3>Fund</h3><p>Assess funding readiness and connect priority projects with Canadian funding streams.</p></article>
+          <article class="phase-card"><div class="phase-number">05</div><h3>Implement & Evaluate</h3><p>Assign responsibilities, track activity and report progress using consistent measures.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="included" id="included">
+      <div class="container">
+        <p class="section-eyebrow">Inside the planning system</p>
+        <h2 class="section-title">Tools for the full planning cycle</h2>
+        <p class="section-sub">The system combines explanatory guidance with practical worksheets and fillable fields your team can use during planning, meetings and follow-up.</p>
+        <div class="feature-grid">
+          <article class="feature"><div class="feature-icon">🧭</div><h3>Community Readiness Assessment</h3><p>Score eight readiness criteria, identify gaps and decide what must be in place before a larger planning process begins.</p></article>
+          <article class="feature"><div class="feature-icon">🗺️</div><h3>Community Asset Inventory</h3><p>Document natural, physical, cultural, human, business and organizational assets that can support development.</p></article>
+          <article class="feature"><div class="feature-icon">📊</div><h3>Strengths & Weaknesses Analysis</h3><p>Organize internal strengths and gaps alongside outside opportunities and risks that may affect progress.</p></article>
+          <article class="feature"><div class="feature-icon">⚖️</div><h3>Project Prioritization Matrix</h3><p>Compare proposed initiatives using consistent criteria instead of relying only on opinion or urgency.</p></article>
+          <article class="feature"><div class="feature-icon">💰</div><h3>Funding Readiness & Directory</h3><p>Assess whether projects are ready for funding and review federal, provincial and Indigenous CED funding streams.</p></article>
+          <article class="feature"><div class="feature-icon">📅</div><h3>Implementation & Reporting</h3><p>Assign actions, timelines and responsibilities, then track progress through quarterly reporting and evaluation tools.</p></article>
+        </div>
+        <div class="spec-strip" aria-label="Product specifications">
+          <div><strong>48</strong><span>Pages</span></div>
+          <div><strong>274</strong><span>Fillable Fields</span></div>
+          <div><strong>5</strong><span>Planning Phases</span></div>
+          <div><strong>13</strong><span>Provinces & Territories</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="audience-title">
+      <div class="container">
+        <p class="section-eyebrow">Designed for Canadian planning work</p>
+        <h2 class="section-title" id="audience-title">Who this system is for</h2>
+        <p class="section-sub">Use it independently or as the common framework for staff, boards, committees and community partners.</p>
+        <div class="audience-grid">
+          <article class="audience-card"><span>🏛️</span><h3>Municipalities</h3></article>
+          <article class="audience-card"><span>🪶</span><h3>Indigenous Organizations</h3></article>
+          <article class="audience-card"><span>🤝</span><h3>Nonprofits & Community Groups</h3></article>
+          <article class="audience-card"><span>📈</span><h3>Economic Development Offices</h3></article>
+          <article class="audience-card"><span>🌐</span><h3>Regional Development Agencies</h3></article>
+          <article class="audience-card"><span>💼</span><h3>Community Futures Organizations</h3></article>
+          <article class="audience-card"><span>👥</span><h3>Boards & Planning Committees</h3></article>
+          <article class="audience-card"><span>📋</span><h3>Community Development Professionals</h3></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="licences">
+      <div class="container">
+        <p class="section-eyebrow">Choose the right access</p>
+        <h2 class="section-title">Individual and team licences</h2>
+        <p class="section-sub">Both options include the complete 48-page fillable planning system. Choose based on how many people will use it.</p>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Individual Licence</h3>
+            <div class="price">$67</div>
+            <div class="currency">CAD · One-time purchase</div>
+            <ul>
+              <li>Licensed for one user</li>
+              <li>Complete 48-page planning system</li>
+              <li>274 fillable fields</li>
+              <li>Digital completion and print-friendly format</li>
+              <li>Immediate delivery after purchase</li>
+            </ul>
+            <a class="btn btn-primary" href="https://canadiancommdev.gumroad.com/l/cedtoolkit" target="_blank" rel="noopener">Get the Individual System</a>
+          </article>
+          <article class="price-card featured">
+            <span class="badge">For Organizations</span>
+            <h3>Professional Team Licence</h3>
+            <div class="price">$395</div>
+            <div class="currency">CAD · One-time purchase</div>
+            <ul>
+              <li>Licensed for up to 10 users in one organization</li>
+              <li>Complete 48-page planning system</li>
+              <li>Use during internal planning sessions</li>
+              <li>Suitable for staff, boards and committees</li>
+              <li>Immediate delivery after purchase</li>
+            </ul>
+            <a class="btn btn-primary" href="https://canadiancommdev.gumroad.com/l/ced-planning-system-org" target="_blank" rel="noopener">Get the Team Licence</a>
+          </article>
+        </div>
+        <p class="payment-note"><strong>Prices are listed in CAD.</strong> Gumroad processes billing in USD using the exchange rate at the time of purchase. Your financial institution may apply its own conversion rate or fees.</p>
+      </div>
+    </section>
+
+    <section class="sample">
+      <div class="container sample-inner">
+        <div>
+          <p class="eyebrow">See inside before you buy</p>
+          <h2>Download the free CED sample</h2>
+          <p>The sample includes the Community Readiness Assessment, eight scored criteria, a worked example, facilitator guidance and fillable fields.</p>
+        </div>
+        <a class="btn btn-light" href="https://canadiancommdev.gumroad.com/l/cedtoolkit-sample" target="_blank" rel="noopener">Download the Free Sample</a>
+      </div>
+    </section>
+
+    <section>
+      <div class="container experience-grid">
+        <div class="experience-stat"><strong>$350K+</strong><span>in multi-governmental funding successfully secured through first-hand community development work</span></div>
+        <div class="experience-copy">
+          <p class="eyebrow" style="text-align:left">Created from first-hand experience</p>
+          <h2>Built from real community economic development work</h2>
+          <p>The system was developed after years of work in community economic development and tourism across Atlantic Canada, including community consultation, long-term planning and the preparation of projects for multi-governmental funding.</p>
+          <p>It was created to replace the repeated work of rebuilding planning documents, meeting tools and funding frameworks from scratch for every new initiative.</p>
+          <p>These are the tools we wished we had: one guided system that keeps the planning process organized from the first readiness discussion through implementation and reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="container">
+        <p class="section-eyebrow">Frequently asked questions</p>
+        <h2 class="section-title">Before you purchase</h2>
+        <div class="faq-list">
+          <details><summary>Who is the Community Economic Development Planning System for?</summary><p>It is designed for Canadian municipalities, Indigenous organizations, nonprofits, regional development agencies, Community Futures organizations, economic development offices, planning committees and community development professionals.</p></details>
+          <details><summary>What format will I receive?</summary><p>You will receive a 48-page fillable PDF with 274 interactive fields. It can be completed digitally in a modern PDF reader or printed for planning meetings and workshops.</p></details>
+          <details><summary>What is the difference between the individual and team licences?</summary><p>The individual licence is for one user. The Professional Team Licence allows up to 10 people within one organization to use the system for internal planning work.</p></details>
+          <details><summary>Does it include funding information?</summary><p>Yes. It includes federal, provincial and Indigenous community economic development funding streams. Funding programs can change, so confirm current eligibility, deadlines and requirements directly with the funder before applying.</p></details>
+          <details><summary>Is this a completed community plan?</summary><p>No. It is a guided planning system that helps your community or organization develop its own evidence, priorities, projects and implementation plan. It does not replace local decision-making or professional legal, financial or regulatory advice.</p></details>
+          <details><summary>How will I receive the product?</summary><p>Your download will be available immediately after purchase and through the email sent to the address used at checkout.</p></details>
+          <details><summary>Can I review a sample first?</summary><p>Yes. The free sample includes the Community Readiness Assessment section, a worked example, facilitator notes and fillable fields.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="final-cta">
+    <h2>Move from community priorities to <span>organized action.</span></h2>
+    <p>Choose the licence that fits your work and begin using the complete Community Economic Development Planning System today.</p>
+    <div class="button-row">
+      <a class="btn btn-primary" href="https://canadiancommdev.gumroad.com/l/cedtoolkit" target="_blank" rel="noopener">Individual Licence — $67 CAD</a>
+      <a class="btn btn-secondary" href="https://canadiancommdev.gumroad.com/l/ced-planning-system-org" target="_blank" rel="noopener">Team Licence — $395 CAD</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">Canadian Community Development</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/#products">All Planning Systems</a>
+        <a href="/#free">Free Resources</a>
+        <a href="https://canadiancommdev.gumroad.com" target="_blank" rel="noopener">Store</a>
+      </div>
+      <div>© 2026 Canadian Community Development</div>
+    </div>
+  </footer>
+</body>
+</html>
