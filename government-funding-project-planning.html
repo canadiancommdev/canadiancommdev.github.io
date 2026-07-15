@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Government Funding &amp; Project Planning System | Canada</title>
+<meta name="description" content="A field-tested government funding and project planning system for Canadian nonprofits, municipalities, Indigenous organizations, community groups and businesses.">
+<link rel="canonical" href="https://canadiancommunitydevelopment.com/government-funding-project-planning.html">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="product"><meta property="og:title" content="Government Funding &amp; Project Planning System"><meta property="og:description" content="Plan stronger projects and prepare more complete Canadian funding applications with guided templates, trackers, consultation tools and funding resources."><meta property="og:url" content="https://canadiancommunitydevelopment.com/government-funding-project-planning.html"><meta property="og:site_name" content="Canadian Community Development"><meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    :root {
+      --navy:#1B2A4A; --navy2:#0F1D35; --teal:#1D9E75; --teal-dark:#168a64;
+      --teal-lt:#E1F5EE; --gold:#C9A84C; --gold-lt:#FDF3DC; --white:#FFFFFF;
+      --grey-bg:#F4F5F7; --grey-lt:#E8EAED; --grey-md:#68717d; --text:#2A2A2A;
+      --shadow:0 18px 45px rgba(15,29,53,.12);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Source Sans 3',sans-serif;color:var(--text);background:var(--white);line-height:1.65}
+    a{color:inherit}
+    h1,h2,h3{font-family:'Playfair Display',serif;color:var(--navy);line-height:1.15}
+    .top-line{height:5px;background:var(--gold)}
+    .site-header{background:var(--navy2);position:relative;z-index:5}
+    nav{max-width:1240px;margin:auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:white}
+    .brand-icon{width:44px;height:44px;border:1.5px solid var(--gold);border-radius:8px;display:grid;place-items:center;font-size:22px;background:var(--navy)}
+    .brand-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;line-height:1.15}
+    .brand-name span{display:block;margin-top:4px;font-family:'Source Sans 3',sans-serif;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#34c89a;font-weight:600}
+    nav ul{display:flex;align-items:center;gap:28px;list-style:none}
+    nav li a{text-decoration:none;color:#d4e4f1;font-size:13px;font-weight:600}
+    nav li a:hover{color:var(--gold)}
+    .nav-cta{background:var(--teal);color:white!important;padding:10px 18px;border-radius:7px}
+    .hero{background:radial-gradient(circle at 18% 40%,rgba(29,158,117,.12),transparent 40%),radial-gradient(circle at 80% 20%,rgba(201,168,76,.1),transparent 35%),var(--navy2);color:white;padding:90px 32px 86px}
+    .hero-inner{max-width:1160px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:58px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:.19em;font-size:11px;font-weight:700;color:#30c596;margin-bottom:13px}
+    h1{font-size:clamp(43px,6vw,72px);font-weight:900;color:white;margin-bottom:22px}
+    h1 span{color:var(--gold)}
+    .hero-copy{font-size:20px;line-height:1.62;color:#d4e5f2;max-width:720px;margin-bottom:18px}
+    .hero-note{font-size:14px;color:#a9c2d7;max-width:720px}
+    .button-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+    .btn{display:inline-block;border-radius:8px;padding:14px 25px;text-decoration:none;font-weight:700;font-size:14px;text-align:center;transition:transform .15s,background .2s}
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:var(--teal);color:white}
+    .btn-primary:hover{background:var(--teal-dark)}
+    .btn-secondary{border:2px solid var(--gold);color:var(--gold);padding:12px 23px}
+    .btn-light{background:var(--gold);color:var(--navy)}
+    .hero-card{background:white;color:var(--text);border-top:5px solid var(--gold);border-radius:12px;padding:30px;box-shadow:0 22px 55px rgba(0,0,0,.22)}
+    .hero-card .flag{display:inline-block;background:var(--gold-lt);color:var(--navy);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.14em;padding:5px 10px;border-radius:20px;margin-bottom:13px}
+    .hero-card h2{font-size:25px;margin-bottom:17px}
+    .quick-list{list-style:none;margin:18px 0}
+    .quick-list li{position:relative;padding:5px 0 5px 25px;font-size:14px}
+    .quick-list li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:800}
+    .price-box{border-top:1px solid var(--grey-lt);padding-top:20px;margin-top:18px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .price-box strong{font-family:'Playfair Display',serif;color:var(--navy);font-size:27px}
+    .price-box span{display:block;color:var(--grey-md);font-size:12px}
+    .notice{background:var(--gold-lt);border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);padding:17px 28px;text-align:center;color:var(--navy);font-size:14px;font-weight:600}
+    .notice strong{color:var(--teal-dark)}
+    main section{padding:84px 32px}
+    .container{max-width:1120px;margin:auto}
+    .section-eyebrow{text-align:center;text-transform:uppercase;letter-spacing:.19em;font-size:11px;font-weight:700;color:var(--teal);margin-bottom:10px}
+    .section-title{text-align:center;font-size:clamp(31px,4vw,47px);font-weight:900;margin-bottom:16px}
+    .section-sub{text-align:center;max-width:720px;margin:0 auto 50px;color:var(--grey-md);font-size:17px}
+    .intro-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:58px;align-items:start}
+    .prose h2{font-size:37px;margin-bottom:20px}
+    .prose p{margin-bottom:17px;font-size:17px;color:#404751}
+    .definition{background:var(--teal-lt);border-left:4px solid var(--teal);border-radius:0 10px 10px 0;padding:22px 25px;margin-top:26px;color:var(--navy)}
+    .side-panel{background:var(--grey-bg);border:1px solid var(--grey-lt);border-radius:12px;padding:28px}
+    .side-panel h3{font-size:24px;margin-bottom:13px}
+    .side-panel ul{list-style:none}
+    .side-panel li{padding:8px 0 8px 25px;position:relative;border-bottom:1px solid #e2e5e9}
+    .side-panel li:last-child{border-bottom:0}
+    .side-panel li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:800}
+    .phases{background:var(--navy2)}
+    .phases .section-title{color:white}
+    .phases .section-sub{color:#afc6da}
+    .phase-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+    .phase-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-top:3px solid var(--teal);border-radius:10px;padding:25px 20px;color:white}
+    .phase-number{font-family:'Playfair Display',serif;color:var(--gold);font-weight:900;font-size:28px;margin-bottom:9px}
+    .phase-card h3{color:white;font-size:19px;margin-bottom:9px}
+    .phase-card p{color:#aac2d6;font-size:14px}
+    .included{background:var(--grey-bg)}
+    .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .feature{background:white;border:1px solid var(--grey-lt);border-radius:11px;padding:27px;box-shadow:0 8px 23px rgba(27,42,74,.045)}
+    .feature-icon{font-size:27px;margin-bottom:11px}
+    .feature h3{font-size:20px;margin-bottom:8px}
+    .feature p{font-size:14px;color:#59616a}
+    .spec-strip{margin-top:32px;background:var(--navy);color:white;border-radius:12px;padding:25px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;text-align:center}
+    .spec-strip strong{display:block;font-family:'Playfair Display',serif;font-size:29px;color:var(--gold)}
+    .spec-strip span{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#d2e2ef}
+    .audience-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .audience-card{border:1px solid var(--grey-lt);border-radius:10px;padding:24px;text-align:center}
+    .audience-card span{font-size:31px;display:block;margin-bottom:10px}
+    .audience-card h3{font-size:18px}
+    .pricing{background:var(--gold-lt)}
+    .pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;max-width:880px;margin:auto}
+    .pricing-grid.single{grid-template-columns:minmax(0,520px);justify-content:center}
+    .price-card{background:white;border:1px solid rgba(201,168,76,.45);border-radius:13px;padding:34px;position:relative}
+    .price-card.featured{border:2px solid var(--teal);box-shadow:var(--shadow)}
+    .badge{position:absolute;right:20px;top:20px;background:var(--teal);color:white;border-radius:20px;padding:5px 11px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;font-weight:700}
+    .price-card h3{font-size:25px;margin-bottom:7px}
+    .price{font-family:'Playfair Display',serif;color:var(--navy);font-size:45px;font-weight:900;margin:14px 0 2px}
+    .currency{font-size:13px;color:var(--grey-md);margin-bottom:20px}
+    .price-card ul{list-style:none;margin:18px 0 27px}
+    .price-card li{position:relative;padding:6px 0 6px 24px;font-size:14px}
+    .price-card li::before{content:'✓';position:absolute;left:0;color:var(--teal);font-weight:800}
+    .price-card .btn{width:100%}
+    .payment-note{text-align:center;margin-top:24px;color:#626a73;font-size:13px}
+    .sample{background:var(--navy);color:white}
+    .sample-inner{display:grid;grid-template-columns:1fr auto;gap:34px;align-items:center}
+    .sample h2{color:white;font-size:39px;margin-bottom:12px}
+    .sample p{color:#bed1e1;max-width:760px}
+    .experience-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:45px;align-items:center}
+    .experience-stat{background:var(--navy2);color:white;border-radius:13px;padding:42px;text-align:center;border-top:5px solid var(--gold)}
+    .experience-stat strong{font-family:'Playfair Display',serif;color:var(--gold);font-size:52px;display:block;line-height:1}
+    .experience-stat span{font-size:14px;color:#c5d8e8;display:block;margin-top:10px}
+    .experience-copy h2{font-size:37px;margin-bottom:18px}
+    .experience-copy p{margin-bottom:15px;color:#48505a}
+    .related{background:white}
+    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .related-card{border:1px solid var(--grey-lt);border-radius:11px;padding:24px;background:var(--grey-bg)}
+    .related-card h3{font-size:20px;margin-bottom:8px}
+    .related-card p{font-size:14px;color:#59616a;margin-bottom:14px}
+    .related-card a{font-size:13px;font-weight:700;color:var(--teal-dark);text-decoration:none}
+    .faq{background:var(--grey-bg)}
+    .faq-list{max-width:900px;margin:auto;display:grid;gap:14px}
+    details{background:white;border:1px solid var(--grey-lt);border-radius:9px;padding:18px 22px}
+    summary{cursor:pointer;font-weight:700;color:var(--navy);font-size:16px}
+    details p{padding-top:12px;color:#555e68}
+    .final-cta{background:var(--navy2);text-align:center;color:white;padding:80px 32px}
+    .final-cta h2{font-size:clamp(31px,4vw,47px);color:white;margin-bottom:15px}
+    .final-cta h2 span{color:var(--gold)}
+    .final-cta p{max-width:680px;margin:0 auto;color:#b7cce0;font-size:17px}
+    .final-cta .button-row{justify-content:center}
+    footer{background:#091426;border-top:3px solid var(--gold);padding:36px 32px;color:#9fb3c7}
+    .footer-inner{max-width:1160px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap}
+    .footer-brand{font-family:'Playfair Display',serif;color:white;font-weight:700}
+    .footer-links{display:flex;gap:20px;flex-wrap:wrap}
+    .footer-links a{text-decoration:none;font-size:13px}
+    .footer-links a:hover{color:var(--gold)}
+    @media(max-width:960px){nav ul{display:none}.hero-inner,.intro-grid,.experience-grid{grid-template-columns:1fr}.hero{padding-top:60px}.hero-card{max-width:610px}.phase-grid{grid-template-columns:repeat(2,1fr)}.feature-grid{grid-template-columns:repeat(2,1fr)}.audience-grid{grid-template-columns:repeat(2,1fr)}.sample-inner{grid-template-columns:1fr}.related-grid{grid-template-columns:1fr}}
+    @media(max-width:650px){nav{padding:17px 20px}.brand-name{font-size:15px}main section{padding:62px 20px}.hero{padding:58px 20px 65px}.button-row{flex-direction:column}.btn{width:100%}.price-box{flex-direction:column}.phase-grid,.feature-grid,.audience-grid,.pricing-grid,.spec-strip{grid-template-columns:1fr}.spec-strip{gap:12px}.sample h2{font-size:31px}.footer-inner{flex-direction:column;text-align:center}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://canadiancommunitydevelopment.com/"},{"@type":"ListItem","position":2,"name":"Government Funding & Project Planning System","item":"https://canadiancommunitydevelopment.com/government-funding-project-planning.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Government Funding & Project Planning System","description":"A field-tested government funding and project planning system for Canadian nonprofits, municipalities, Indigenous organizations, community groups and businesses.","brand":{"@type":"Brand","name":"Canadian Community Development"},"url":"https://canadiancommunitydevelopment.com/government-funding-project-planning.html","offers":[{"@type":"Offer","name":"Individual Licence","price":"57","priceCurrency":"CAD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","url":"https://canadiancommdev.gumroad.com/l/fundingpro"},{"@type":"Offer","name":"Professional Team Licence","price":"285","priceCurrency":"CAD","availability":"https://schema.org/InStock","itemCondition":"https://schema.org/NewCondition","url":"https://canadiancommdev.gumroad.com/l/fundingpro-org"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Who is this planning system for?","acceptedAnswer":{"@type":"Answer","text":"It is designed for Canadian nonprofits, municipalities, Indigenous organizations, community groups, regional development agencies, tourism organizations, boards, committees and private businesses preparing government funding applications."}},{"@type":"Question","name":"Does it guarantee funding approval?","acceptedAnswer":{"@type":"Answer","text":"No. No planning system can guarantee approval. It helps you organize the information, evidence and project details funders commonly expect, while final decisions remain with each funding organization."}},{"@type":"Question","name":"What format will I receive?","acceptedAnswer":{"@type":"Answer","text":"You will receive a 49-page fillable PDF with 229 interactive fields. It can be completed digitally or printed for meetings and planning sessions."}},{"@type":"Question","name":"What is the difference between the individual and team licences?","acceptedAnswer":{"@type":"Answer","text":"The individual licence is for one user. The Team Licence allows up to 10 people within one organization to use the system for internal work."}},{"@type":"Question","name":"Does it include Canadian funding information?","acceptedAnswer":{"@type":"Answer","text":"Yes. It includes federal programs, regional development agencies, provincial and territorial resources, and Indigenous-specific streams. Always confirm current program details directly with the funder."}},{"@type":"Question","name":"How will I receive the product?","acceptedAnswer":{"@type":"Answer","text":"Your download will be available immediately after purchase and through the email sent to the address used at checkout."}},{"@type":"Question","name":"Can I review a sample first?","acceptedAnswer":{"@type":"Answer","text":"Yes. The free sample includes the Project Concept Summary, guidance, funder-perspective notes and fillable fields."}}]}</script>
+</head>
+<body>
+<div class="top-line"></div>
+<header class="site-header"><nav aria-label="Main navigation"><a class="brand" href="/"><span class="brand-icon" aria-hidden="true">🧭</span><span class="brand-name">Canadian Community Development<span>Planning Systems for Canada</span></span></a><ul><li><a href="#overview">Overview</a></li><li><a href="#included">What's Included</a></li><li><a href="#licences">Licences</a></li><li><a href="#faq">FAQ</a></li><li><a class="nav-cta" href="https://canadiancommdev.gumroad.com/l/fundingpro" target="_blank" rel="noopener">Buy Individual</a></li></ul></nav></header>
+<section class="hero"><div class="hero-inner"><div><p class="eyebrow">Professional funding and project planning system</p><h1>Government Funding & Project <span>Planning System</span></h1><p class="hero-copy">A complete planning process that helps Canadian organizations define projects, organize supporting evidence, prepare funding applications and move approved initiatives into accountable implementation.</p><p class="hero-note">Designed for nonprofits, municipalities, Indigenous organizations, regional development agencies, community groups, tourism organizations and Canadian businesses seeking government funding.</p><div class="button-row"><a class="btn btn-primary" href="#licences">Choose Your Licence</a><a class="btn btn-secondary" href="https://canadiancommdev.gumroad.com/l/fundingpro-sample" target="_blank" rel="noopener">View the Free Sample</a></div></div><aside class="hero-card" aria-label="Product summary"><span class="flag">2026 Edition · Canadian Context</span><h2>From project idea to funding-ready plan</h2><ul class="quick-list"><li>10-step grant application framework</li><li>Project planning and application narrative tools</li><li>Funding opportunity tracker</li><li>Community consultation and meeting templates</li><li>Canada-wide funding resources</li></ul><div class="price-box"><div><strong>$57</strong><span>CAD · Individual Licence</span></div><div><strong>$285</strong><span>CAD · Up to 10 Users</span></div></div></aside></div></section>
+<div class="notice"><strong>Prices are listed in CAD.</strong> Billing is processed in USD at the exchange rate at the time of purchase. Your download will be available immediately after purchase and in your email.</div>
+<main>
+<section id="overview"><div class="container intro-grid"><div class="prose"><p class="eyebrow" style="text-align:left">A practical Canadian planning framework</p><h2>What makes a project funding-ready?</h2><p>A funding-ready project is more than a good idea. It clearly explains the need, who will benefit, what will happen, who is responsible, how much it will cost and how results will be measured.</p><p>This system brings those pieces together before you begin copying answers into an application portal. It helps your organization build one strong project foundation that can be adapted to different Canadian funders and programs.</p><p>It is designed for real planning conditions: limited staff capacity, multiple partners, volunteer boards, tight deadlines and the need to manage several opportunities at once.</p><div class="definition"><strong>The result:</strong> a documented project plan that supports stronger grant narratives, clearer budgets, partner discussions, application tracking and implementation follow-through.</div></div><aside class="side-panel"><h3>A strong funding plan should help you:</h3><ul><li>Demonstrate a clear and evidence-based need</li><li>Define realistic activities, outcomes and timelines</li><li>Build a defensible budget and identify contributions</li><li>Coordinate partners, consultation and approvals</li><li>Match the project to suitable Canadian funding programs</li><li>Track applications, decisions and next steps</li></ul></aside></div></section>
+<section class="phases"><div class="container"><p class="section-eyebrow">The guided process</p><h2 class="section-title">Five steps from concept to submission</h2><p class="section-sub">Use the system to organize the project before applying, then keep the same information working through delivery and reporting.</p><div class="phase-grid"><article class="phase-card"><div class="phase-number">01</div><h3>Define</h3><p>Clarify the problem, proposed solution, beneficiaries and intended outcomes.</p></article><article class="phase-card"><div class="phase-number">02</div><h3>Plan</h3><p>Build activities, responsibilities, timelines, partnerships and evidence.</p></article><article class="phase-card"><div class="phase-number">03</div><h3>Match</h3><p>Identify suitable funding programs and confirm eligibility and fit.</p></article><article class="phase-card"><div class="phase-number">04</div><h3>Prepare</h3><p>Draft the application narrative, budget, consultation and support materials.</p></article><article class="phase-card"><div class="phase-number">05</div><h3>Manage</h3><p>Track submissions, decisions, next steps and project implementation.</p></article></div></div></section>
+<section class="included" id="included"><div class="container"><p class="section-eyebrow">Inside the planning system</p><h2 class="section-title">Everything needed to organize a fundable project</h2><p class="section-sub">Guidance, worksheets and trackers help you prepare the core information funders commonly expect while keeping internal planning organized.</p><div class="feature-grid"><article class="feature"><div class="feature-icon">📋</div><h3>10-Step Grant Application Checklist</h3><p>Detailed guidance on the information, evidence and decisions to prepare before submitting.</p></article><article class="feature"><div class="feature-icon">🧩</div><h3>Project Planning Template</h3><p>Map the need, activities, outcomes, partners, timelines and other details used in Canadian grant narratives.</p></article><article class="feature"><div class="feature-icon">🔎</div><h3>Funding Opportunity Tracker</h3><p>Compare programs, deadlines, eligibility, required contributions, status and next actions.</p></article><article class="feature"><div class="feature-icon">🤝</div><h3>Community Consultation Outline</h3><p>Plan who needs to be engaged, why their input matters and how feedback will be documented.</p></article><article class="feature"><div class="feature-icon">📝</div><h3>Meeting Agenda &amp; Minutes</h3><p>Keep decisions, responsibilities and follow-up actions clear throughout project development.</p></article><article class="feature"><div class="feature-icon">🇨🇦</div><h3>Canadian Funding Resources</h3><p>Review federal programs, regional development agencies, provincial and territorial resources, and Indigenous-specific streams.</p></article></div><div class="spec-strip"><div><strong>49</strong><span>Pages</span></div><div><strong>229</strong><span>Fillable Fields</span></div><div><strong>10</strong><span>Application Steps</span></div><div><strong>13</strong><span>Provinces &amp; Territories</span></div></div></div></section>
+<section><div class="container"><p class="section-eyebrow">Designed for Canadian planning work</p><h2 class="section-title">Who this system is for</h2><p class="section-sub">Use it independently or as a structured framework for planning, advising and implementation.</p><div class="audience-grid"><article class="audience-card"><span>🏛️</span><h3>Municipalities</h3></article><article class="audience-card"><span>🪶</span><h3>Indigenous Organizations</h3></article><article class="audience-card"><span>🤝</span><h3>Nonprofits &amp; Community Groups</h3></article><article class="audience-card"><span>📈</span><h3>Regional Development Agencies</h3></article><article class="audience-card"><span>💼</span><h3>Canadian Small Businesses</h3></article><article class="audience-card"><span>🧳</span><h3>Tourism Organizations</h3></article><article class="audience-card"><span>👥</span><h3>Boards &amp; Committees</h3></article><article class="audience-card"><span>📋</span><h3>Grant &amp; Project Professionals</h3></article></div></div></section>
+<section class="pricing" id="licences"><div class="container"><p class="section-eyebrow">Choose the right access</p><h2 class="section-title">Individual and team licences</h2><p class="section-sub">Both options include the complete 49-page fillable planning system. Choose based on how many people need to use it.</p><div class="pricing-grid"><article class="price-card"><h3>Individual Licence</h3><div class="price">$57</div><div class="currency">CAD · One-time purchase</div><ul><li>Licensed for one user</li><li>Complete 49-page planning system</li><li>229 fillable fields</li><li>Canada-wide funding resources</li><li>Immediate delivery after purchase</li></ul><a class="btn btn-primary" href="https://canadiancommdev.gumroad.com/l/fundingpro" target="_blank" rel="noopener">Get the Individual System</a></article><article class="price-card featured"><span class="badge">For Organizations</span><h3>Professional Team Licence</h3><div class="price">$285</div><div class="currency">CAD · One-time purchase</div><ul><li>Licensed for up to 10 users in one organization</li><li>Complete 49-page planning system</li><li>Use during internal planning and application preparation</li><li>Suitable for staff, boards and committees</li><li>Immediate delivery after purchase</li></ul><a class="btn btn-primary" href="https://canadiancommdev.gumroad.com/l/fundingpro-org" target="_blank" rel="noopener">Get the Team Licence</a></article></div><p class="payment-note"><strong>Prices are listed in CAD.</strong> Gumroad processes billing in USD using the exchange rate at the time of purchase. Your financial institution may apply its own conversion rate or fees.</p></div></section>
+<section class="sample"><div class="container sample-inner"><div><p class="eyebrow">See inside before you buy</p><h2>Download the free funding sample</h2><p>Review the Project Concept Summary, funder-perspective notes, guidance text and fillable fields before purchasing the complete system.</p></div><a class="btn btn-light" href="https://canadiancommdev.gumroad.com/l/fundingpro-sample" target="_blank" rel="noopener">Download the Free Sample</a></div></section>
+<section><div class="container experience-grid"><div class="experience-stat"><strong>$350K+</strong><span>in multi-governmental funding successfully secured through first-hand community development work</span></div><div class="experience-copy"><p class="eyebrow" style="text-align:left">Created from practical experience</p><h2>Built from real funding and project development work</h2><p>The system was developed after years of preparing community and tourism initiatives for multi-governmental funding across Atlantic Canada.</p><p>It reflects the repeated information funders expect to see: a demonstrated need, clear activities, credible partners, a realistic budget and measurable outcomes.</p><p>The goal is not to promise approval. It is to help you submit a more complete, organized and defensible project.</p></div></div></section>
+<section class="related"><div class="container"><p class="section-eyebrow">Related planning systems</p><h2 class="section-title">Continue building your plan</h2><div class="related-grid"><article class="related-card"><h3>Community Tourism Planning System</h3><p>Build a shared tourism vision, asset map and 12-month action plan.</p><a href="/community-tourism-planning.html">View system details →</a></article>
+<article class="related-card"><h3>Community Economic Development Planning System</h3><p>Move from readiness and asset mapping to funded implementation.</p><a href="/community-economic-development-planning.html">View system details →</a></article>
+<article class="related-card"><h3>Small Business Success Planning System</h3><p>Develop a five-year business plan, financial model and funding strategy.</p><a href="/small-business-planning.html">View system details →</a></article></div></div></section>
+<section class="faq" id="faq"><div class="container"><p class="section-eyebrow">Frequently asked questions</p><h2 class="section-title">Before you purchase</h2><div class="faq-list"><details><summary>Who is this planning system for?</summary><p>It is designed for Canadian nonprofits, municipalities, Indigenous organizations, community groups, regional development agencies, tourism organizations, boards, committees and private businesses preparing government funding applications.</p></details><details><summary>Does it guarantee funding approval?</summary><p>No. No planning system can guarantee approval. It helps you organize the information, evidence and project details funders commonly expect, while final decisions remain with each funding organization.</p></details><details><summary>What format will I receive?</summary><p>You will receive a 49-page fillable PDF with 229 interactive fields. It can be completed digitally or printed for meetings and planning sessions.</p></details><details><summary>What is the difference between the individual and team licences?</summary><p>The individual licence is for one user. The Team Licence allows up to 10 people within one organization to use the system for internal work.</p></details><details><summary>Does it include Canadian funding information?</summary><p>Yes. It includes federal programs, regional development agencies, provincial and territorial resources, and Indigenous-specific streams. Always confirm current program details directly with the funder.</p></details><details><summary>How will I receive the product?</summary><p>Your download will be available immediately after purchase and through the email sent to the address used at checkout.</p></details><details><summary>Can I review a sample first?</summary><p>Yes. The free sample includes the Project Concept Summary, guidance, funder-perspective notes and fillable fields.</p></details></div></div></section>
+</main>
+<section class="final-cta"><h2>Prepare stronger projects for <span>funding and action.</span></h2><p>Choose the licence that fits your work and begin organizing the complete project and funding process today.</p><div class="button-row"><a class="btn btn-primary" href="https://canadiancommdev.gumroad.com/l/fundingpro" target="_blank" rel="noopener">Individual Licence — $57 CAD</a><a class="btn btn-secondary" href="https://canadiancommdev.gumroad.com/l/fundingpro-org" target="_blank" rel="noopener">Team Licence — $285 CAD</a></div></section>
+<footer><div class="footer-inner"><div class="footer-brand">Canadian Community Development</div><div class="footer-links"><a href="/">Home</a><a href="/#products">All Planning Systems</a><a href="/community-economic-development-planning.html">CED System</a><a href="/government-funding-project-planning.html">Funding System</a><a href="/small-business-planning.html">Small Business</a></div><div>© 2026 Canadian Community Development</div></div></footer>
+</body></html>
