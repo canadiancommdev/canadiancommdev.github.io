@@ -143,6 +143,12 @@
     .experience-copy h2{font-size:37px;margin-bottom:18px}
     .experience-copy p{margin-bottom:15px;color:#48505a}
 
+    .related{background:white}
+    .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .related-card{border:1px solid var(--grey-lt);border-radius:11px;padding:24px;background:var(--grey-bg)}
+    .related-card h3{font-size:20px;margin-bottom:8px}
+    .related-card p{font-size:14px;color:#59616a;margin-bottom:14px}
+    .related-card a{font-size:13px;font-weight:700;color:var(--teal-dark);text-decoration:none}
     .faq{background:var(--grey-bg)}
     .faq-list{max-width:900px;margin:auto;display:grid;gap:14px}
     details{background:white;border:1px solid var(--grey-lt);border-radius:9px;padding:18px 22px}
@@ -171,6 +177,7 @@
       .feature-grid{grid-template-columns:repeat(2,1fr)}
       .audience-grid{grid-template-columns:repeat(2,1fr)}
       .sample-inner{grid-template-columns:1fr}
+      .related-grid{grid-template-columns:1fr}
     }
     @media(max-width:650px){
       nav{padding:17px 20px}
@@ -450,6 +457,19 @@
           <p>The system was developed after years of work in community economic development and tourism across Atlantic Canada, including community consultation, long-term planning and the preparation of projects for multi-governmental funding.</p>
           <p>It was created to replace the repeated work of rebuilding planning documents, meeting tools and funding frameworks from scratch for every new initiative.</p>
           <p>These are the tools we wished we had: one guided system that keeps the planning process organized from the first readiness discussion through implementation and reporting.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="related">
+      <div class="container">
+        <p class="section-eyebrow">Related planning systems</p>
+        <h2 class="section-title">Continue building your plan</h2>
+        <div class="related-grid">
+          <article class="related-card"><h3>Government Funding & Project Planning System</h3><p>Organize projects and prepare stronger Canadian funding applications.</p><a href="/government-funding-project-planning.html">View system details →</a></article>
+          <article class="related-card"><h3>Community Tourism Planning System</h3><p>Build a shared tourism vision, asset map and 12-month action plan.</p><a href="/community-tourism-planning.html">View system details →</a></article>
+          <article class="related-card"><h3>Small Business Success Planning System</h3><p>Develop a five-year business plan, financial model and funding strategy.</p><a href="/small-business-planning.html">View system details →</a></article>
         </div>
       </div>
     </section>
