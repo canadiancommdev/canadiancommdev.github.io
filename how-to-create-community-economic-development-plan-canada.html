@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Create a Community Economic Development Plan in Canada</title>
+  <meta name="description" content="A practical step-by-step guide to creating a community economic development plan in Canada, from readiness and asset mapping to priorities, funding, implementation and evaluation.">
+  <link rel="canonical" href="https://canadiancommunitydevelopment.com/how-to-create-community-economic-development-plan-canada.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Create a Community Economic Development Plan in Canada">
+  <meta property="og:description" content="Follow a practical Canadian planning process from community readiness through funded implementation and evaluation.">
+  <meta property="og:url" content="https://canadiancommunitydevelopment.com/how-to-create-community-economic-development-plan-canada.html">
+  <meta property="og:site_name" content="Canadian Community Development">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --navy:#1B2A4A;--navy2:#0F1D35;--teal:#1D9E75;--teal-dark:#168a64;
+      --teal-lt:#E1F5EE;--gold:#C9A84C;--gold-lt:#FDF3DC;--white:#fff;
+      --grey-bg:#F4F5F7;--grey-lt:#E8EAED;--grey-md:#68717d;--text:#2A2A2A;
+      --shadow:0 18px 45px rgba(15,29,53,.12);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Source Sans 3',sans-serif;color:var(--text);background:var(--white);line-height:1.72}
+    a{color:inherit}
+    .top-line{height:5px;background:var(--gold)}
+    .site-header{background:var(--navy2)}
+    nav{max-width:1240px;margin:auto;padding:20px 32px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:13px;text-decoration:none;color:white}
+    .brand-icon{width:44px;height:44px;border:1.5px solid var(--gold);border-radius:8px;display:grid;place-items:center;font-size:22px;background:var(--navy)}
+    .brand-name{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;line-height:1.15}
+    .brand-name span{display:block;margin-top:4px;font-family:'Source Sans 3',sans-serif;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#34c89a;font-weight:600}
+    nav ul{display:flex;align-items:center;gap:26px;list-style:none}
+    nav ul a{text-decoration:none;color:#d9e9f7;font-size:14px;font-weight:600}
+    nav ul a:hover{color:var(--gold)}
+    .nav-cta{padding:10px 18px;border-radius:6px;background:var(--teal);color:white!important}
+    .hero{background:var(--navy2);color:white;position:relative;overflow:hidden;padding:78px 32px 84px}
+    .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 15% 40%,rgba(29,158,117,.14),transparent 45%),radial-gradient(circle at 85% 20%,rgba(201,168,76,.1),transparent 40%),radial-gradient(circle,rgba(255,255,255,.055) 1px,transparent 1px);background-size:auto,auto,28px 28px}
+    .hero-inner{max-width:1000px;margin:auto;position:relative;text-align:center}
+    .eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:#35c596;font-weight:700;margin-bottom:18px}
+    h1,h2,h3{font-family:'Playfair Display',serif;color:var(--navy);line-height:1.15}
+    h1{font-size:clamp(40px,5.5vw,68px);color:white;font-weight:900}
+    h1 span{color:var(--gold)}
+    .hero-copy{font-size:19px;color:#d5e7f6;max-width:780px;margin:24px auto 0}
+    .breadcrumbs{max-width:1060px;margin:auto;padding:18px 32px;font-size:13px;color:var(--grey-md)}
+    .breadcrumbs a{color:var(--teal-dark);text-decoration:none;font-weight:600}
+    .layout{max-width:1060px;margin:auto;padding:50px 32px 88px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:55px;align-items:start}
+    article h2{font-size:34px;margin:46px 0 16px}
+    article h2:first-of-type{margin-top:0}
+    article h3{font-size:23px;margin:28px 0 10px}
+    article p{margin:0 0 18px;font-size:16.5px}
+    article ul,article ol{margin:0 0 22px 25px}
+    article li{margin-bottom:9px;padding-left:4px}
+    .intro{font-size:19px;color:#3f4750;border-left:4px solid var(--teal);padding:8px 0 8px 22px;margin-bottom:30px}
+    .step{background:var(--grey-bg);border:1px solid var(--grey-lt);border-radius:12px;padding:28px;margin:24px 0}
+    .step-number{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--teal);color:white;font-weight:800;margin-bottom:13px}
+    .step h2{margin:0 0 12px;font-size:29px}
+    .checklist{background:var(--teal-lt);border-left:4px solid var(--teal);border-radius:0 10px 10px 0;padding:24px 26px;margin:28px 0}
+    .checklist h3{margin:0 0 12px}
+    .warning{background:var(--gold-lt);border:1px solid rgba(201,168,76,.45);border-radius:10px;padding:22px 24px;margin:28px 0}
+    .warning strong{color:var(--navy)}
+    .sidebar{position:sticky;top:24px}
+    .side-card{background:white;border:1px solid var(--grey-lt);border-top:5px solid var(--gold);border-radius:12px;padding:25px;box-shadow:var(--shadow);margin-bottom:22px}
+    .side-card h2{font-size:24px;margin-bottom:12px}
+    .side-card p{font-size:14px;color:#4d5660;margin-bottom:15px}
+    .side-card ul{list-style:none;margin:0 0 18px}
+    .side-card li{font-size:14px;padding:5px 0 5px 22px;position:relative}
+    .side-card li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:800}
+    .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:13px 19px;text-align:center;transition:.2s ease}
+    .btn-primary{background:var(--teal);color:white}
+    .btn-primary:hover{background:var(--teal-dark);transform:translateY(-1px)}
+    .btn-secondary{border:2px solid var(--gold);color:var(--navy)}
+    .btn-secondary:hover{background:var(--gold-lt)}
+    .side-card .btn{display:block;width:100%;margin-top:10px}
+    .toc{background:var(--grey-bg);border:1px solid var(--grey-lt);border-radius:10px;padding:22px;margin-bottom:30px}
+    .toc strong{display:block;color:var(--navy);margin-bottom:10px}
+    .toc a{display:block;color:var(--teal-dark);text-decoration:none;font-size:14px;padding:4px 0}
+    .toc a:hover{text-decoration:underline}
+    .faq{background:var(--grey-bg);padding:78px 32px}
+    .container{max-width:1060px;margin:auto}
+    .section-eyebrow{text-align:center;font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:var(--teal);font-weight:700;margin-bottom:12px}
+    .section-title{text-align:center;font-size:clamp(30px,4vw,44px);margin-bottom:38px}
+    details{background:white;border:1px solid var(--grey-lt);border-radius:9px;padding:18px 20px;margin-bottom:12px}
+    summary{font-weight:700;color:var(--navy);cursor:pointer}
+    details p{padding-top:12px;color:#4d5660}
+    .final-cta{background:var(--navy);color:white;text-align:center;padding:72px 32px}
+    .final-cta h2{color:white;font-size:clamp(30px,4vw,45px);margin-bottom:15px}
+    .final-cta h2 span{color:var(--gold)}
+    .final-cta p{max-width:690px;margin:0 auto 28px;color:#bfd0e0;font-size:17px}
+    .button-row{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+    .final-cta .btn-secondary{color:var(--gold)}
+    footer{background:var(--navy2);border-top:3px solid var(--gold);padding:34px 32px;color:#b8cce0}
+    .footer-inner{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}
+    .footer-brand{font-family:'Playfair Display',serif;color:white;font-weight:700}
+    .footer-links{display:flex;gap:22px;flex-wrap:wrap}
+    .footer-links a{text-decoration:none;font-size:13px}
+    @media(max-width:880px){
+      nav ul{display:none}.layout{grid-template-columns:1fr}.sidebar{position:static}.hero{padding-top:60px}
+    }
+    @media(max-width:600px){
+      nav{padding:17px 20px}.hero{padding:54px 22px 62px}.breadcrumbs{padding:15px 22px}.layout{padding:38px 22px 65px}
+      article h2{font-size:29px}.step{padding:22px}.footer-inner{justify-content:center;text-align:center}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Article",
+        "headline":"How to Create a Community Economic Development Plan in Canada",
+        "description":"A practical step-by-step guide to creating a community economic development plan in Canada.",
+        "author":{"@type":"Organization","name":"Canadian Community Development"},
+        "publisher":{"@type":"Organization","name":"Canadian Community Development"},
+        "mainEntityOfPage":"https://canadiancommunitydevelopment.com/how-to-create-community-economic-development-plan-canada.html",
+        "datePublished":"2026-07-15",
+        "dateModified":"2026-07-15",
+        "inLanguage":"en-CA"
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://canadiancommunitydevelopment.com/"},
+          {"@type":"ListItem","position":2,"name":"Knowledge Centre","item":"https://canadiancommunitydevelopment.com/#resources"},
+          {"@type":"ListItem","position":3,"name":"How to Create a Community Economic Development Plan in Canada","item":"https://canadiancommunitydevelopment.com/how-to-create-community-economic-development-plan-canada.html"}
+        ]
+      },
+      {
+        "@type":"FAQPage",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"What should a community economic development plan include?",
+            "acceptedAnswer":{"@type":"Answer","text":"A practical plan should include community evidence, asset mapping, stakeholder input, priorities, project selection, funding readiness, assigned responsibilities, timelines, performance measures and a review process."}
+          },
+          {
+            "@type":"Question",
+            "name":"How long should a community economic development plan cover?",
+            "acceptedAnswer":{"@type":"Answer","text":"Many communities use a three-to-five-year strategic direction supported by a detailed one-year action plan that is reviewed and updated regularly."}
+          },
+          {
+            "@type":"Question",
+            "name":"Who should participate in community economic development planning?",
+            "acceptedAnswer":{"@type":"Answer","text":"Participation should reflect the people affected by the plan and may include municipal or Indigenous leadership, residents, businesses, nonprofits, youth, seniors, tourism operators, service providers and regional partners."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="top-line"></div>
+  <header class="site-header">
+    <nav>
+      <a class="brand" href="/">
+        <span class="brand-icon">🧭</span>
+        <span class="brand-name">Canadian Community Development<span>Professional Planning Systems</span></span>
+      </a>
+      <ul>
+        <li><a href="/#resources">Knowledge Centre</a></li>
+        <li><a href="/#free">Free Resources</a></li>
+        <li><a href="/#products">Planning Systems</a></li>
+        <li><a class="nav-cta" href="/community-economic-development-planning.html">View the Planning System</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">Community Economic Development Knowledge Centre</p>
+      <h1>How to Create a <span>Community Economic Development Plan</span> in Canada</h1>
+      <p class="hero-copy">A practical step-by-step process for turning community needs, local strengths and shared priorities into organized projects, funding opportunities and measurable action.</p>
+    </div>
+  </section>
+
+  <div class="breadcrumbs">
+    <a href="/">Home</a> &nbsp;›&nbsp; <a href="/#resources">Knowledge Centre</a> &nbsp;›&nbsp; Community Economic Development Plan
+  </div>
+
+  <main class="layout">
+    <article>
+      <p class="intro">A strong community economic development plan is more than a list of ideas. It connects reliable local evidence, community participation, realistic priorities, available resources and clear responsibility for implementation.</p>
+
+      <div class="toc">
+        <strong>In this guide</strong>
+        <a href="#purpose">1. Define the purpose and planning area</a>
+        <a href="#readiness">2. Assess community readiness</a>
+        <a href="#evidence">3. Build the evidence base</a>
+        <a href="#assets">4. Map community assets</a>
+        <a href="#engagement">5. Engage the community</a>
+        <a href="#priorities">6. Set priorities and outcomes</a>
+        <a href="#projects">7. Select realistic projects</a>
+        <a href="#funding">8. Prepare for funding</a>
+        <a href="#implementation">9. Build an implementation plan</a>
+        <a href="#evaluation">10. Measure and update</a>
+      </div>
+
+      <p>Community economic development brings local people, organizations, businesses and governments together to improve economic and social well-being using the strengths, knowledge and opportunities already present in the community.</p>
+
+      <p>The process can support many different goals: strengthening local businesses, increasing employment, improving tourism, attracting investment, supporting social enterprise, developing infrastructure, improving services or creating opportunities for groups that have been underserved.</p>
+
+      <p>The best plan is not necessarily the longest plan. It is the one that clearly explains where the community is now, where it wants to go, what it will do first and who is responsible for moving the work forward.</p>
+
+      <section class="step" id="purpose">
+        <div class="step-number">1</div>
+        <h2>Define the purpose and planning area</h2>
+        <p>Begin by agreeing on what the planning process is intended to accomplish. A plan for one municipality may look different from a plan for a regional partnership, an Indigenous community, a rural district or a neighbourhood-based organization.</p>
+        <p>Clarify the geographic area, the decision-making body, the expected planning period and the groups that must be represented. Also identify whether the plan is being created to guide broad long-term development or to address a specific challenge such as workforce shortages, tourism growth, downtown revitalization or business succession.</p>
+        <div class="checklist">
+          <h3>Questions to answer first</h3>
+          <ul>
+            <li>What area and population does the plan cover?</li>
+            <li>Who has authority to approve the plan?</li>
+            <li>What problem or opportunity triggered the planning process?</li>
+            <li>What decisions must the plan help the community make?</li>
+            <li>What timeframe will the plan cover?</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="step" id="readiness">
+        <div class="step-number">2</div>
+        <h2>Assess community readiness</h2>
+        <p>Before beginning a large planning process, determine whether the community has enough leadership, participation, capacity and willingness to act. A planning process can lose momentum when expectations are high but no one has time, authority or resources to implement the results.</p>
+        <p>Review leadership support, community interest, available staff or volunteers, partnerships, financial capacity, access to information and the ability to make decisions. Weaknesses do not mean the planning process should stop. They show where additional preparation or partnership-building is required.</p>
+        <p>A readiness assessment also helps set realistic expectations. A small volunteer organization should not adopt an implementation plan that requires full-time project management unless funding or a delivery partner has been identified.</p>
+      </section>
+
+      <section class="step" id="evidence">
+        <div class="step-number">3</div>
+        <h2>Build the community evidence base</h2>
+        <p>Good planning starts with evidence rather than assumptions. Gather information that explains current conditions and helps the community understand both need and opportunity.</p>
+        <p>Useful information may include population trends, age distribution, labour-force participation, income, housing, transportation, business activity, available commercial space, visitor patterns, infrastructure, services, education, health, digital connectivity and environmental conditions.</p>
+        <p>Numbers alone are not enough. Combine available data with local knowledge from residents, businesses, community organizations and service providers. Data may show that a problem exists; local experience often explains why it exists and what could realistically improve it.</p>
+        <div class="warning"><strong>Canadian planning note:</strong> Data sources, program boundaries and definitions can vary by province, territory and community. Record the source and date for every important statistic so it can be checked and updated later.</div>
+      </section>
+
+      <section class="step" id="assets">
+        <div class="step-number">4</div>
+        <h2>Map community assets, not only problems</h2>
+        <p>Community economic development planning should not be based only on deficits. Asset mapping identifies the people, places, organizations, skills, relationships, infrastructure and cultural strengths that can support action.</p>
+        <p>Assets may include local entrepreneurs, tradespeople, volunteers, community facilities, natural attractions, cultural knowledge, vacant buildings, existing events, local food producers, educational institutions, transportation connections, broadband, service organizations and informal networks.</p>
+        <p>Mapping assets helps a community build from what already works. It may reveal opportunities that are less expensive and more achievable than creating an entirely new program or facility.</p>
+        <h3>Organize assets into useful categories</h3>
+        <ul>
+          <li>People, skills and leadership</li>
+          <li>Businesses, employers and entrepreneurs</li>
+          <li>Natural, cultural and tourism assets</li>
+          <li>Facilities, land and infrastructure</li>
+          <li>Organizations, services and institutions</li>
+          <li>Partnerships, networks and regional connections</li>
+          <li>Funding, investment and revenue opportunities</li>
+        </ul>
+      </section>
+
+      <section class="step" id="engagement">
+        <div class="step-number">5</div>
+        <h2>Engage the people affected by the plan</h2>
+        <p>Community participation should be designed, not improvised. Decide who needs to be heard, how they can participate and how their input will influence decisions.</p>
+        <p>Use a mix of methods where practical: interviews, surveys, community meetings, small-group discussions, business roundtables, youth sessions, stakeholder workshops and conversations with people who may not attend public meetings.</p>
+        <p>Be clear about what is open for discussion and what constraints already exist. People are more likely to trust a process when they understand how input will be used and when the final decisions will be made.</p>
+        <div class="checklist">
+          <h3>Build an inclusive engagement plan</h3>
+          <ul>
+            <li>Identify groups that are affected but often underrepresented.</li>
+            <li>Use accessible times, locations and participation methods.</li>
+            <li>Provide enough background information for informed input.</li>
+            <li>Document recurring themes, concerns and proposed solutions.</li>
+            <li>Report back on what was heard and what changed because of it.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="step" id="priorities">
+        <div class="step-number">6</div>
+        <h2>Set a shared direction, priorities and outcomes</h2>
+        <p>Use the evidence, asset mapping and community input to define a clear direction. A practical plan normally includes a vision, a small number of strategic priorities and measurable outcomes.</p>
+        <p>Avoid broad statements that could apply to any community. Priorities should reflect local conditions and help leaders decide what to pursue, what to postpone and what not to do.</p>
+        <p>For example, “support local business” is too broad on its own. A clearer priority might be to reduce barriers for home-based and small tourism businesses by coordinating information on permits, funding and business support.</p>
+        <h3>Write outcomes that can be observed</h3>
+        <p>Outcomes describe the change the community expects to see. They might include more businesses receiving advisory support, increased use of vacant commercial space, stronger regional partnerships, increased visitor spending or improved access to training.</p>
+      </section>
+
+      <section class="step" id="projects">
+        <div class="step-number">7</div>
+        <h2>Select and prioritize realistic projects</h2>
+        <p>Most communities identify more ideas than they can deliver. A project prioritization process helps compare ideas fairly and prevents the loudest or newest idea from automatically becoming the first priority.</p>
+        <p>Score potential projects using criteria such as community benefit, alignment with the plan, urgency, readiness, cost, staff capacity, partnerships, funding potential, risk and the ability to produce measurable results.</p>
+        <p>Separate immediate actions from longer-term projects. Some early actions should be achievable within existing resources so the community can build confidence while larger funding applications and partnerships are developed.</p>
+      </section>
+
+      <section class="step" id="funding">
+        <div class="step-number">8</div>
+        <h2>Prepare projects for funding</h2>
+        <p>Funding should support a well-developed project; it should not be the only reason the project exists. Before approaching a funder, define the need, activities, expected results, partners, budget, timeline, risks and long-term operating requirements.</p>
+        <p>Research programs only after the project concept is clear enough to compare with eligibility requirements and funding priorities. Keep a funding opportunity tracker that records deadlines, contacts, required documents and the status of each application.</p>
+        <p>Canadian projects may combine municipal, provincial or territorial, federal, Indigenous, philanthropic and private contributions. Confirm whether proposed contributions are eligible and whether one funder's approval affects another funding source.</p>
+        <div class="warning"><strong>Do not build the plan around one funding program.</strong> Programs, priorities and deadlines change. Build a strong project first, then match it with the most suitable current opportunities.</div>
+      </section>
+
+      <section class="step" id="implementation">
+        <div class="step-number">9</div>
+        <h2>Create a detailed implementation plan</h2>
+        <p>A strategy becomes useful when each priority is translated into tasks, responsibility, timing and resources. Every action should have a lead person or organization rather than being assigned vaguely to “the community.”</p>
+        <p>For each action, record:</p>
+        <ul>
+          <li>The specific task or deliverable</li>
+          <li>The person or organization responsible</li>
+          <li>Partners and approvals required</li>
+          <li>Start and completion dates</li>
+          <li>Estimated cost and funding source</li>
+          <li>Risks, dependencies and next decisions</li>
+          <li>The evidence that will show completion or progress</li>
+        </ul>
+        <p>A 30-, 60- and 90-day action schedule can help convert the completed plan into immediate next steps while momentum is still strong.</p>
+      </section>
+
+      <section class="step" id="evaluation">
+        <div class="step-number">10</div>
+        <h2>Measure progress and update the plan</h2>
+        <p>Community economic development plans should be living documents. Schedule regular reviews to compare actual progress with the action plan, identify delays and update assumptions.</p>
+        <p>Use a small set of meaningful measures rather than tracking everything. Measures may include completed actions, funding secured, businesses supported, partnerships formed, participation levels, jobs created or maintained, private investment, new services or changes in visitor activity.</p>
+        <p>Not every result can be attributed to one project, and not every important change happens quickly. Combine numerical measures with short progress narratives that explain what changed, what was learned and what needs to happen next.</p>
+      </section>
+
+      <h2>What the completed plan should contain</h2>
+      <p>A finished community economic development plan will usually include:</p>
+      <ul>
+        <li>An executive summary and description of the planning area</li>
+        <li>The purpose, scope and planning process</li>
+        <li>A community profile and evidence summary</li>
+        <li>Community assets, challenges and opportunities</li>
+        <li>Stakeholder and community input</li>
+        <li>A shared vision and strategic priorities</li>
+        <li>Prioritized projects and funding readiness</li>
+        <li>A detailed implementation plan</li>
+        <li>Performance measures and a review schedule</li>
+      </ul>
+
+      <h2>Common planning mistakes to avoid</h2>
+      <ul>
+        <li>Beginning with a preferred project before confirming the community need</li>
+        <li>Consulting only the people who already participate</li>
+        <li>Creating too many priorities for available capacity</li>
+        <li>Listing actions without assigning responsibility</li>
+        <li>Choosing projects only because funding may be available</li>
+        <li>Ignoring long-term operating and maintenance costs</li>
+        <li>Finishing the document without establishing a review process</li>
+      </ul>
+
+      <p>A successful planning process does not end when the document is approved. The real value comes from creating shared understanding, making informed choices and establishing a practical system for moving priority projects forward.</p>
+    </article>
+
+    <aside class="sidebar">
+      <div class="side-card">
+        <h2>Build your plan with a guided system</h2>
+        <p>The Community Economic Development Planning System organizes this complete process in one professional, fillable workbook.</p>
+        <ul>
+          <li>Community readiness assessment</li>
+          <li>Asset inventory and analysis</li>
+          <li>Strategic priorities and project selection</li>
+          <li>Funding readiness and implementation</li>
+          <li>274 fillable fields</li>
+        </ul>
+        <a class="btn btn-primary" href="/community-economic-development-planning.html">View the Planning System</a>
+        <a class="btn btn-secondary" href="https://canadiancommdev.gumroad.com/l/cedtoolkit-sample" target="_blank" rel="noopener">Download the Free Sample</a>
+      </div>
+      <div class="side-card">
+        <h2>Quick planning reminder</h2>
+        <p>Keep the long-term strategic direction broad enough to remain useful, but make the first 12 months specific enough that progress can be assigned and measured.</p>
+      </div>
+    </aside>
+  </main>
+
+  <section class="faq">
+    <div class="container">
+      <p class="section-eyebrow">Frequently asked questions</p>
+      <h2 class="section-title">Community economic development planning</h2>
+      <details>
+        <summary>What should a community economic development plan include?</summary>
+        <p>It should include community evidence, asset mapping, stakeholder input, a shared direction, strategic priorities, prioritized projects, funding readiness, assigned responsibilities, timelines, performance measures and a regular review process.</p>
+      </details>
+      <details>
+        <summary>How long should a community economic development plan cover?</summary>
+        <p>Many communities use a three-to-five-year strategic direction supported by a detailed one-year action plan. The action plan should be reviewed regularly and updated as conditions, resources and opportunities change.</p>
+      </details>
+      <details>
+        <summary>Who should participate in the planning process?</summary>
+        <p>Participation should reflect the people affected by the plan. This may include municipal or Indigenous leadership, residents, businesses, nonprofits, youth, seniors, tourism operators, service providers, educators and regional partners.</p>
+      </details>
+      <details>
+        <summary>Does a community need a consultant to create a plan?</summary>
+        <p>Not always. A community with clear leadership, facilitation capacity and a structured process may complete much of the work internally. Outside support may be useful when the process is highly complex, politically sensitive or requires specialized technical analysis.</p>
+      </details>
+      <details>
+        <summary>How is community economic development different from traditional economic development?</summary>
+        <p>Community economic development places strong emphasis on local participation, community assets and benefits that improve both economic and social well-being. It often combines business, employment, community services, inclusion and quality-of-life goals.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="final-cta">
+    <h2>Turn community priorities into <span>organized action.</span></h2>
+    <p>Use the complete Community Economic Development Planning System to guide readiness, asset mapping, priority setting, funding, implementation and evaluation.</p>
+    <div class="button-row">
+      <a class="btn btn-primary" href="/community-economic-development-planning.html">Explore the Complete System</a>
+      <a class="btn btn-secondary" href="https://canadiancommdev.gumroad.com/l/cedtoolkit-sample" target="_blank" rel="noopener">Download the Free Sample</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">Canadian Community Development</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/#resources">Knowledge Centre</a>
+        <a href="/#products">Planning Systems</a>
+        <a href="/#free">Free Resources</a>
+      </div>
+      <div>© 2026 Canadian Community Development</div>
+    </div>
+  </footer>
+</body>
+</html>
