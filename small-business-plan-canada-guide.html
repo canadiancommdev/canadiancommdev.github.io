@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="en-CA">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>How to Write a Small Business Plan in Canada | Practical Guide</title>
+<meta content="A practical guide to building a Canadian small business plan, from testing the idea and defining customers to financial projections, funding and next steps." name="description"/>
+<link href="https://canadiancommunitydevelopment.com/small-business-plan-canada-guide.html" rel="canonical"/>
+<meta content="index, follow" name="robots"/>
+<meta content="article" property="og:type"/>
+<meta content="How to Write a Small Business Plan in Canada | Practical Guide" property="og:title"/>
+<meta content="A practical guide to building a Canadian small business plan, from testing the idea and defining customers to financial projections, funding and next steps." property="og:description"/>
+<meta content="https://canadiancommunitydevelopment.com/small-business-plan-canada-guide.html" property="og:url"/>
+<meta content="Canadian Community Development" property="og:site_name"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root{
+      --navy:#1B2A4A;
+      --navy2:#0F1D35;
+      --teal:#1D9E75;
+      --teal-dark:#168A64;
+      --teal-lt:#E1F5EE;
+      --gold:#C9A84C;
+      --gold-lt:#FDF3DC;
+      --white:#FFFFFF;
+      --grey-bg:#F4F5F7;
+      --grey-lt:#E8EAED;
+      --grey-md:#68717D;
+      --text:#2A2A2A;
+      --shadow:0 18px 45px rgba(15,29,53,.12);
+    }
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Source Sans 3',sans-serif;
+      color:var(--text);
+      background:var(--white);
+      line-height:1.7;
+    }
+
+    .top-line{height:5px;background:var(--gold)}
+    .site-header{background:var(--navy2)}
+
+    nav{
+      max-width:1240px;
+      margin:auto;
+      padding:20px 32px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:13px;
+      text-decoration:none;
+      color:white;
+    }
+
+    .brand-icon{
+      width:44px;
+      height:44px;
+      border:1.5px solid var(--gold);
+      border-radius:8px;
+      display:grid;
+      place-items:center;
+      font-size:22px;
+      background:var(--navy);
+    }
+
+    .brand-name{
+      font-family:'Playfair Display',serif;
+      font-size:18px;
+      font-weight:700;
+      line-height:1.15;
+    }
+
+    .brand-name span{
+      display:block;
+      margin-top:4px;
+      font-family:'Source Sans 3',sans-serif;
+      font-size:10px;
+      letter-spacing:.13em;
+      text-transform:uppercase;
+      color:#34C89A;
+      font-weight:600;
+    }
+
+    nav ul{
+      display:flex;
+      align-items:center;
+      gap:26px;
+      list-style:none;
+    }
+
+    nav ul a{
+      text-decoration:none;
+      color:#D9E9F7;
+      font-size:14px;
+      font-weight:600;
+    }
+
+    nav ul a:hover{color:var(--gold)}
+
+    .nav-cta{
+      padding:10px 18px;
+      border-radius:6px;
+      background:var(--teal);
+      color:white!important;
+    }
+
+    .hero{
+      background:var(--navy2);
+      color:white;
+      position:relative;
+      overflow:hidden;
+      padding:78px 32px 84px;
+    }
+
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:
+        radial-gradient(circle at 15% 40%,rgba(29,158,117,.14),transparent 45%),
+        radial-gradient(circle at 85% 20%,rgba(201,168,76,.1),transparent 40%),
+        radial-gradient(circle,rgba(255,255,255,.055) 1px,transparent 1px);
+      background-size:auto,auto,28px 28px;
+    }
+
+    .hero-inner{
+      max-width:980px;
+      margin:auto;
+      position:relative;
+      text-align:center;
+    }
+
+    .eyebrow{
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:.2em;
+      color:#35C596;
+      font-weight:700;
+      margin-bottom:18px;
+    }
+
+    h1,h2,h3{
+      font-family:'Playfair Display',serif;
+      color:var(--navy);
+      line-height:1.15;
+    }
+
+    h1{
+      font-size:clamp(40px,5.5vw,68px);
+      color:white;
+      font-weight:900;
+    }
+
+    h1 span{color:var(--gold)}
+
+    .hero-copy{
+      font-size:19px;
+      color:#D5E7F6;
+      max-width:760px;
+      margin:24px auto 0;
+    }
+
+    .breadcrumbs{
+      max-width:1040px;
+      margin:auto;
+      padding:18px 32px;
+      font-size:13px;
+      color:var(--grey-md);
+    }
+
+    .breadcrumbs a{
+      color:var(--teal-dark);
+      text-decoration:none;
+      font-weight:600;
+    }
+
+    .layout{
+      max-width:1040px;
+      margin:auto;
+      padding:52px 32px 88px;
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 300px;
+      gap:55px;
+      align-items:start;
+    }
+
+    article h2{
+      font-size:33px;
+      margin:42px 0 16px;
+    }
+
+    article h2:first-of-type{margin-top:0}
+
+    article h3{
+      font-size:22px;
+      margin:26px 0 9px;
+    }
+
+    article p{
+      margin:0 0 18px;
+      font-size:16.5px;
+    }
+
+    .intro{
+      font-size:19px;
+      color:#3F4750;
+      border-left:4px solid var(--teal);
+      padding:8px 0 8px 22px;
+      margin-bottom:34px;
+    }
+
+    .phase{
+      border-bottom:1px solid var(--grey-lt);
+      padding-bottom:24px;
+      margin-bottom:28px;
+    }
+
+    .phase:last-of-type{border-bottom:none}
+
+    .phase-label{
+      display:inline-block;
+      background:var(--teal-lt);
+      color:var(--teal-dark);
+      font-size:11px;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      font-weight:700;
+      padding:6px 11px;
+      border-radius:20px;
+      margin-bottom:10px;
+    }
+
+    .phase h2{
+      margin:0 0 12px;
+      font-size:29px;
+    }
+
+    .example{
+      background:var(--gold-lt);
+      border-left:4px solid var(--gold);
+      border-radius:0 9px 9px 0;
+      padding:17px 19px;
+      margin-top:16px;
+      font-size:15px;
+    }
+
+    .example strong{color:var(--navy)}
+
+    .mistakes{
+      background:var(--grey-bg);
+      border:1px solid var(--grey-lt);
+      border-radius:12px;
+      padding:28px;
+      margin-top:38px;
+    }
+
+    .mistakes h2{
+      margin:0 0 16px;
+      font-size:31px;
+    }
+
+    .mistakes ul{margin-left:22px}
+
+    .mistakes li{
+      margin-bottom:12px;
+      padding-left:4px;
+    }
+
+    .sidebar{
+      position:sticky;
+      top:24px;
+    }
+
+    .side-card{
+      background:white;
+      border:1px solid var(--grey-lt);
+      border-top:5px solid var(--gold);
+      border-radius:12px;
+      padding:25px;
+      box-shadow:var(--shadow);
+      margin-bottom:22px;
+    }
+
+    .side-card h2{
+      font-size:24px;
+      margin-bottom:12px;
+    }
+
+    .side-card p{
+      font-size:14px;
+      color:#4D5660;
+      margin-bottom:15px;
+    }
+
+    .side-card ul{
+      list-style:none;
+      margin:0 0 18px;
+    }
+
+    .side-card li{
+      font-size:14px;
+      padding:5px 0 5px 22px;
+      position:relative;
+    }
+
+    .side-card li::before{
+      content:"✓";
+      position:absolute;
+      left:0;
+      color:var(--teal);
+      font-weight:800;
+    }
+
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      font-weight:700;
+      border-radius:8px;
+      padding:13px 19px;
+      text-align:center;
+      transition:.2s ease;
+    }
+
+    .btn-primary{
+      background:var(--teal);
+      color:white;
+    }
+
+    .btn-primary:hover{
+      background:var(--teal-dark);
+      transform:translateY(-1px);
+    }
+
+    .btn-secondary{
+      border:2px solid var(--gold);
+      color:var(--navy);
+    }
+
+    .btn-secondary:hover{background:var(--gold-lt)}
+
+    .side-card .btn{
+      display:block;
+      width:100%;
+      margin-top:10px;
+    }
+
+    .final-cta{
+      background:var(--navy);
+      color:white;
+      text-align:center;
+      padding:72px 32px;
+    }
+
+    .final-cta h2{
+      color:white;
+      font-size:clamp(30px,4vw,45px);
+      margin-bottom:15px;
+    }
+
+    .final-cta h2 span{color:var(--gold)}
+
+    .final-cta p{
+      max-width:690px;
+      margin:0 auto 28px;
+      color:#BFD0E0;
+      font-size:17px;
+    }
+
+    .button-row{
+      display:flex;
+      gap:13px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    .final-cta .btn-secondary{color:var(--gold)}
+
+    footer{
+      background:var(--navy2);
+      border-top:3px solid var(--gold);
+      padding:34px 32px;
+      color:#B8CCE0;
+    }
+
+    .footer-inner{
+      max-width:1180px;
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:22px;
+      flex-wrap:wrap;
+    }
+
+    .footer-brand{
+      font-family:'Playfair Display',serif;
+      color:white;
+      font-weight:700;
+    }
+
+    .footer-links{
+      display:flex;
+      gap:22px;
+      flex-wrap:wrap;
+    }
+
+    .footer-links a{
+      text-decoration:none;
+      font-size:13px;
+    }
+
+    @media(max-width:880px){
+      nav ul{display:none}
+      .layout{grid-template-columns:1fr}
+      .sidebar{position:static}
+      .hero{padding-top:60px}
+    }
+
+    @media(max-width:600px){
+      nav{padding:17px 20px}
+      .hero{padding:54px 22px 62px}
+      .breadcrumbs{padding:15px 22px}
+      .layout{padding:38px 22px 65px}
+      article h2{font-size:29px}
+      .footer-inner{justify-content:center;text-align:center}
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"How to Write a Small Business Plan in Canada | Practical Guide",
+  "description":"A practical guide to building a Canadian small business plan, from testing the idea and defining customers to financial projections, funding and next steps.",
+  "author":{"@type":"Person","name":"Lucille Timmons","jobTitle":"Community Economic Development Professional","url":"https://www.linkedin.com/in/lucille-timmons-a734292b/"},
+  "publisher":{"@type":"Organization","name":"Canadian Community Development"},
+  "mainEntityOfPage":"https://canadiancommunitydevelopment.com/small-business-plan-canada-guide.html",
+  "datePublished":"2026-11-22",
+  "dateModified":"2026-11-22",
+  "inLanguage":"en-CA"
+}
+</script></script>
+</head>
+<body>
+<div class="top-line"></div>
+<header class="site-header">
+<nav>
+<a class="brand" href="/">
+<span class="brand-icon">🧭</span>
+<span class="brand-name">Canadian Community Development<span>Professional Planning Systems</span></span>
+</a>
+<ul>
+<li><a href="/#resources">Knowledge Centre</a></li>
+<li><a href="/#free">Free Resources</a></li>
+<li><a href="/#products">Planning Systems</a></li>
+<li><a class="nav-cta" href="/small-business-planning.html">View the Small Business System</a></li>
+</ul>
+</nav>
+</header>
+<section class="hero">
+<div class="hero-inner">
+<p class="eyebrow">Small Business Planning in Canada</p>
+<h1>How to Write a <span>Small Business Plan</span> in Canada</h1>
+<p class="hero-copy">A practical starting point for Canadian entrepreneurs, small business owners and the organizations that support them.</p>
+</div>
+</section>
+<div class="breadcrumbs"><a href="/">Home</a> &nbsp;›&nbsp; <a href="/#resources">Knowledge Centre</a> &nbsp;›&nbsp; Small Business Planning</div>
+<main class="layout">
+<article>
+<p class="intro">A business plan is useful when it helps you make decisions. For a small business in Canada, that means setting out who you will serve, how the business will operate, what it will cost and how the numbers support the next step. It is not a promise that a lender or funder will say yes. It is a clear, evidence-based case for the business.</p>
+<p><strong>By Lucille Timmons, Community Economic Development Professional</strong> · <a href="https://www.linkedin.com/in/lucille-timmons-a734292b/" rel="author noopener" target="_blank">LinkedIn profile</a></p>
+<div class="phase"><span class="phase-label">Start with the customer and the problem</span><h2>1. Be specific about who will buy</h2>
+<p>Describe the customers you intend to serve and the need your product or service meets. “Everyone” is rarely a useful target market. Look for practical evidence: conversations with potential customers, local population and visitor information, competitor research, pre-orders, survey results or early sales.</p>
+<p>Explain what customers use now, what alternatives they have and why they would choose your offer. If the business depends on seasonal visitors, repeat buyers or a small local market, say so and show how that affects sales.</p></div>
+<div class="phase"><span class="phase-label">Explain how the business works</span><h2>2. Describe the offer and day-to-day operation</h2>
+<p>Set out what you sell, how customers find and purchase it, where the work happens and what is needed to deliver it. Include suppliers, equipment, staffing, permits or insurance where relevant. Identify the owner’s role and the skills or outside support the plan depends on.</p>
+<p>A plan should also make operating limits visible. Capacity, opening hours, delivery area, seasonality and available owner time can all affect realistic sales and costs.</p></div>
+<div class="phase"><span class="phase-label">Show the financial logic</span><h2>3. Build projections from clear assumptions</h2>
+<p>Estimate sales using a method you can explain: number of customers, average purchase, repeat rate, available appointment slots or expected occupancy. Then list the costs required to earn that revenue, including supplies, rent, utilities, insurance, wages, loan payments, marketing, taxes and owner compensation where applicable.</p>
+<p>Prepare a monthly cash-flow forecast for the first year and annual projections for the following years. Cash flow and profit answer different questions. A business can show a profit on paper and still run short of cash if customer payments arrive after bills are due.</p>
+<div class="example"><strong>Useful check:</strong> Change the assumptions. What happens if sales take longer to build, costs rise or the busy season is shorter than expected? A sensible plan explains how the owner would respond.</div></div>
+<div class="phase"><span class="phase-label">Connect the request to the plan</span><h2>4. Explain how much money is needed and why</h2>
+<p>If you are approaching a lender or seeking funding, specify the amount, the costs it will cover and the timing. Match each requested expense to a quote, estimate or other support where possible. Explain what the money is expected to help the business achieve, and how repayment or ongoing operating costs will be handled.</p>
+<p>Programs, eligibility rules and deadlines change. Confirm current details directly with the relevant lender or funder before relying on them. A business plan can organize the case, but it cannot replace a program’s requirements.</p></div>
+<div class="phase"><span class="phase-label">Make it useful after submission</span><h2>5. Finish with milestones and risks</h2>
+<p>Turn the plan into a short action schedule. Identify the next steps, who is responsible, what each step costs and what must happen first. Include meaningful risks—such as delayed approvals, supplier changes, slow sales or a key-person absence—and a realistic response for each.</p>
+<p>Review the plan when important assumptions change. It should help guide decisions after a loan application or funding request is submitted, not sit untouched in a folder.</p></div>
+<section class="mistakes"><h2>Common small business planning gaps</h2><ul>
+<li>Using broad claims about demand without showing how they were checked</li><li>Projecting sales without showing the calculation behind them</li><li>Leaving out working capital, taxes, owner pay or maintenance costs</li><li>Confusing a profitable year with having enough cash each month</li><li>Requesting funding without connecting each cost to a clear business need</li><li>Using old program details without checking current eligibility and deadlines</li></ul></section>
+<h2>Who can use a structured planning system?</h2>
+<p>Owners can use a step-by-step system to organize the business case, financial model and action plan. Community Futures teams, economic development officers, chambers, business associations and other business-support organizations can use a consistent framework to help clients prepare and discuss their plans.</p>
+<p>The <a href="/small-business-planning.html">Small Business Success Planning System</a> brings together a five-year business plan, financial projections, funding preparation and action planning. If your project also needs a broader funding and project structure, see the <a href="/government-funding-project-planning.html">Government Funding &amp; Project Planning System</a>.</p>
+</article>
+<aside class="sidebar"><div class="side-card"><h2>Ready to build your plan?</h2>
+<p>Use a guided Canadian small business planning system to bring the business case, financial model and next steps into one working document.</p>
+<ul><li>Five-year business planning structure</li><li>Financial projections and cash-flow planning</li><li>Funding preparation and program directory</li><li>Milestones, risks and action planning</li></ul>
+<a class="btn btn-primary" href="/small-business-planning.html">View the Small Business System</a>
+<a class="btn btn-secondary" href="/government-funding-project-planning.html">Explore Funding Project Planning</a></div></aside>
+</main>
+<section class="final-cta">
+<h2>Give your business idea a <span>clear plan.</span></h2>
+<p>Build a practical business plan around your customers, operations, financial assumptions and next steps.</p>
+<div class="button-row"><a class="btn btn-primary" href="/small-business-planning.html">Explore the Small Business System</a><a class="btn btn-secondary" href="/#resources">Back to the Knowledge Centre</a></div>
+</section>
+<footer>
+<div class="footer-inner">
+<div class="footer-brand">Canadian Community Development</div>
+<div class="footer-links">
+<a href="/">Home</a>
+<a href="/#resources">Knowledge Centre</a>
+<a href="/#products">Planning Systems</a>
+<a href="/#free">Free Resources</a>
+</div>
+<div>© 2026 Canadian Community Development</div>
+</div>
+</footer>
+</body>
+</html>
