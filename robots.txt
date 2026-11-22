@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://canadiancommunitydevelopment.com/sitemap.xml
